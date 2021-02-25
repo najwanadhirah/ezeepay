@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="300dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/edAccNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bootstrapSize="lg"
+        app:roundedCorners="true"
+        android:inputType="number"
+        android:maxLength="10"
+        android:hint="10 digit account no."
+        app:bootstrapBrand="secondary"
+        />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:textColor="@color/solid_black"
+            android:text="SCAN "
+            android:layout_marginLeft="10dp"
+            app:bootstrapBrand="primary"
+            android:textSize="12dp"
+            app:showOutline="true"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            />
+
+    </LinearLayout>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btnCheckBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/solid_black"
+        android:text="Check Bill"
+        app:bootstrapBrand="regular"
+        android:layout_marginTop="30dp"
+        android:textSize="14dp"
+        app:showOutline="true"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        />
+
+</LinearLayout>

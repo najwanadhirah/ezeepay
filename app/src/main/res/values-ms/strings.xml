@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EzeePay</string>
+    <string name="draw_1">- Hadiah tidak boleh ditukar</string>
+    <string name="draw_2">- Cabutan bertuah bermula selepas 100 tiket ditebus</string>
+    <string name="draw_3">- Maksimum 10 e-tiket untuk setiap ahli QPay99 ditebus</string>
+    <string name="draw_4">- QPoints yang telah ditebus tidak boleh dikembalikan.</string>
+    <string name="Redeem_now">Tebus sekarang</string>
+
+    <string-array name="country_array">
+        <item>Johor</item>
+        <item>Kedah</item>
+        <item>Kelantan</item>
+        <item>Melaka</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Perak</item>
+        <item>Perlis</item>
+        <item>Pulau Pinang</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Selangor</item>
+        <item>Terengganu</item>
+        <item>WP Kuala Lumpur</item>
+        <item>WP Labuan</item>
+        <item>WP Putra Jaya</item>
+    </string-array>
+    <string name="luckydraw">Cabutan Bertuah</string>
+    <string name="please_select">Sila Pilih</string>
+    <string name="sendfeedback">"Hantar maklumbalas "</string>
+    <string name="qpoints_redemptions">QPoints Penebusan</string>
+    <string name="daily_bonus">Dapatkan bonus log masuk harian</string>
+    <string name="share_win">Shake and Win</string>
+    <string name="nav_topup">TOPUP</string>
+    <string name="productInfo">Info Produk</string>
+    <string name="commission">Komisen</string>
+</resources>

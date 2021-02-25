@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:clickable="false"
+        android:gravity="left"
+        android:paddingTop="16dp"
+        android:text="@string/pilih_nilai_my"
+        android:textColor="@color/solid_black"
+        android:textSize="28sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:gravity="left"
+        android:text="@string/pilih_nilai_en"
+        android:textColor="@color/solid_black"
+        android:textSize="26sp"
+        android:textStyle="italic" >
+    </TextView>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:stretchColumns="0,1,2" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/tblrRM5"
+                style="@style/priceTAG"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/linear_layout_border"
+                android:minWidth="60dp"
+                android:minHeight="60dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvRM5"
+                    style="@style/priceTAGfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="RM 10"
+                    android:textStyle="bold" >
+                </TextView>
+                <TextView
+                    android:id="@+id/tvRM5Value"
+                    style="@style/GSTpriceTAGfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Credit RM5"
+                     >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tblrRM10"
+                style="@style/priceTAG"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/linear_layout_border"
+                android:minWidth="60dp"
+                android:minHeight="60dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvRM10"
+                    style="@style/priceTAGfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="RM 10"
+                    android:textStyle="bold" >
+                </TextView>
+                <TextView
+                    android:id="@+id/tvRM10Value"
+                    style="@style/GSTpriceTAGfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Credit RM10"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tblrRM20"
+                style="@style/priceTAG"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/linear_layout_border"
+                android:minWidth="60dp"
+                android:minHeight="60dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvRM20"
+                    style="@style/priceTAGfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="RM 10"
+                    android:textStyle="bold" >
+                </TextView>
+                <TextView
+                    android:id="@+id/tvRM20Value"
+                    style="@style/GSTpriceTAGfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Credit RM20"
+                    >
+                </TextView>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/tblrRM30"
+                style="@style/priceTAG"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/linear_layout_border"
+                android:minWidth="60dp"
+                android:minHeight="60dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvRM30"
+                    style="@style/priceTAGfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="RM 10"
+                    android:textStyle="bold" >
+                </TextView>
+                <TextView
+                    android:id="@+id/tvRM30Value"
+                    style="@style/GSTpriceTAGfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Credit RM30"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tblrRM50"
+                style="@style/priceTAG"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/linear_layout_border"
+                android:minWidth="60dp"
+                android:minHeight="60dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvRM50"
+                    style="@style/priceTAGfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="RM 10"
+                    android:textStyle="bold" >
+                </TextView>
+                <TextView
+                    android:id="@+id/tvRM50Value"
+                    style="@style/GSTpriceTAGfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Credit RM50"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tblrRM100"
+                style="@style/priceTAG"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/linear_layout_border"
+                android:minWidth="60dp"
+                android:minHeight="60dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvRM100"
+                    style="@style/priceTAGfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="RM 10"
+                    android:textStyle="bold" >
+                </TextView>
+                <TextView
+                    android:id="@+id/tvRM100Value"
+                    style="@style/GSTpriceTAGfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Credit RM100"
+                    >
+                </TextView>
+            </LinearLayout>
+        </TableRow>
+
+        <!-- <TableRow -->
+        <!-- android:id="@+id/tableRowLain" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginTop="15dp" -->
+        <!-- android:paddingLeft="30dp" -->
+        <!-- android:paddingRight="30dp" > -->
+
+
+        <!-- </TableRow> -->
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/tblrLain"
+        style="@style/priceTAG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/linear_layout_border"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvlain_lain"
+            style="@style/priceTAGfont"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/lain_lain"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nav_btn_left"
+        style="@style/navigationButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="100dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/left_grey"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:visibility="invisible" >
+    </Button>
+
+</LinearLayout>

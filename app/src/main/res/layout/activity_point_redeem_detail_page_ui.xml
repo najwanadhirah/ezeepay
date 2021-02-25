@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:context=".activity.ui.PointRedeemDetailPageUI">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:text="Name"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edRName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:enabled="false"
+            android:hint="your name here."
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvRMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:text="Mobile No."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/edRMobile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:hint="01xxxxxxxx"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:text="Address"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edAddress1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:hint="Address1"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/edAddress2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:hint="Address2"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/edAddress3"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:hint="Address3"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/edPostcode"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:hint="Postcode"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/edState"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:hint="State"
+            android:textSize="15dp" />
+
+
+
+        <Button
+
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:id="@+id/btnRedeem"
+            android:text="REDEEM NOW"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

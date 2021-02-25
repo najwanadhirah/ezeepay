@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="16px"
+    android:paddingLeft="16px"
+    android:paddingTop="16px"
+    android:paddingBottom="16px"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1px"
+        android:layout_gravity="left|center_vertical|center_horizontal"
+        android:background="#00000000"
+        android:src="@drawable/ic_digi_icon" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvProduct"
+        android:layout_toRightOf="@+id/imgProduct"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/solid_black"
+        android:text="@string/OK" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imgArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_keyboard_arrow_right_black_48dp"
+        />
+</RelativeLayout>

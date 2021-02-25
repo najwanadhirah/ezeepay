@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/productPrice"
+        layout="@layout/view_layout_navigation_bar" />
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:minHeight="150dp"
+        android:minWidth="150dp"
+        android:paddingTop="10dp" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="@string/pilih_nilai_my"
+        android:textColor="@color/solid_black"
+        android:textSize="28sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:textColor="@color/solid_black"
+        android:textSize="28sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <ViewFlipper
+        android:id="@+id/productViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/vfVinPrice"
+            layout="@layout/view_layout_gridview_sim_price" />
+
+        <include
+            android:id="@+id/vfPinBuy"
+            layout="@layout/view_layout_product_buy" />
+    </ViewFlipper>
+
+</LinearLayout>

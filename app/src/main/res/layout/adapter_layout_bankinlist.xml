@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvCreated"
+            style="@style/gvFontStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@string/OK" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            style="@style/gvFontStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@string/OK" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvAmount"
+            style="@style/gvFontStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="@string/OK" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvBank"
+            style="@style/gvFontStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="@string/OK" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            style="@style/gvFontStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="@string/OK" >
+        </TextView>
+        <TextView
+            android:id="@+id/tvRecipientReference"
+            style="@style/gvFontStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@string/OK" >
+        </TextView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

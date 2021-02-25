@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity" >
+
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:fillViewport="true"
+        android:layout_height="fill_parent" >
+
+
+    <LinearLayout
+        android:id="@+id/llPrintLastPin"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gdPinPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:horizontalSpacing="30dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="30dp" >
+        </GridView>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:focusableInTouchMode="false"
+            android:text="TERMA &amp; SYARAT"
+            android:textSize="14pt"
+            android:textColor="@color/solid_black"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvSyarat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:focusableInTouchMode="false"
+            android:text="1 - SIM baru akan hantar dengan POS LAJU dalam 3-5 hari berkerja"
+            android:textSize="8pt"
+            android:textColor="@color/solid_black"
+             >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvSyarat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:focusableInTouchMode="false"
+            android:text="2 - Sila massukan matlumat yang betul sebelum hantar"
+            android:textSize="8pt"
+            android:textColor="@color/solid_black"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvSyarat3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:focusableInTouchMode="false"
+            android:text=""
+            android:textSize="8pt"
+            android:textColor="@color/solid_black"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+</ScrollView>
+</LinearLayout>

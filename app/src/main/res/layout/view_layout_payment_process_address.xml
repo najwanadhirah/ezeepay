@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/lladdress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounder_border_gray"
+        android:orientation="horizontal"
+        android:padding="15dp"
+       >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAddUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvAddMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvAddAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvAddAddress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvAddAddress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tvEmaillAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imgRemovedAdd"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/navgiation_delete"
+            android:tint="@color/Black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/lladdress"
+        android:minHeight="30dp"
+        android:id="@+id/lladdaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounder_border_gray"
+        android:orientation="horizontal"
+        android:padding="15dp"
+       >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add New Address"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:backgroundTint="@color/primary_dark"
+            android:src="@drawable/baseline_add_black_24"
+            android:tint="@color/primary_dark" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/rounder_border_textbox"
+            android:text="Next"
+            android:textColor="@color/Black"
+            app:layout_constraintTop_toTopOf="@+id/btnCancel" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounder_border_textbox"
+            android:text="Cancel"
+            android:textColor="@color/Black" />
+    </LinearLayout>
+
+</RelativeLayout>

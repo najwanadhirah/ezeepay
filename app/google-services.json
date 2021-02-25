@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "61383803763",
+    "firebase_url": "https://srs-mobile.firebaseio.com",
+    "project_id": "srs-mobile",
+    "storage_bucket": "srs-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61383803763:android:205675738894b963",
+        "android_client_info": {
+          "package_name": "com.rt.srs.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61383803763-89offribri869pm50t1unuo0ppuchlik.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rt.srs.mobile",
+            "certificate_hash": "3307909bde0cd5b49153d058749db24296be788f"
+          }
+        },
+        {
+          "client_id": "61383803763-ocq24uhmqgl6m4qicapig9sicaq8m2p1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rt.srs.mobile",
+            "certificate_hash": "08273622c3c62d2eb0fff598566bb0da7f6974f7"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-tciqryY4RrxMP_hN29HCpDhrvQcOnGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61383803763-qljksvq67ggs7c4l89h9grijmv8iisbk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "61383803763-kgbhr5934k6rrqh5eeeglirg69g1uv6k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "richtech.SRS-Messenger"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61383803763:android:667e23c49d0cc451",
+        "android_client_info": {
+          "package_name": "my.srs.topup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-tciqryY4RrxMP_hN29HCpDhrvQcOnGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61383803763-qljksvq67ggs7c4l89h9grijmv8iisbk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "61383803763-kgbhr5934k6rrqh5eeeglirg69g1uv6k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "richtech.SRS-Messenger"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61383803763:android:9a400ee43af6fc37",
+        "android_client_info": {
+          "package_name": "rob.payezqp.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61383803763-31sf9fegii6148hkssunob433vsvcdg9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rob.payezqp.com",
+            "certificate_hash": "3307909bde0cd5b49153d058749db24296be788f"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-tciqryY4RrxMP_hN29HCpDhrvQcOnGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61383803763-qljksvq67ggs7c4l89h9grijmv8iisbk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "61383803763-kgbhr5934k6rrqh5eeeglirg69g1uv6k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "richtech.SRS-Messenger"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

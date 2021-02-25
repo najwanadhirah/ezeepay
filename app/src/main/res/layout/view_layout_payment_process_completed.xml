@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+
+            android:text="Your Paymnent Has Completed"
+            android:textStyle="bold"
+            android:textColor="@color/solid_black"
+            android:textSize="16sp"></TextView>
+
+        <LinearLayout
+            android:padding="2dp"
+            android:gravity="center"
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSuccessMsg"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/solid_black"
+                android:textSize="14sp"></TextView>
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvcAmount"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=" RM5 to "-->
+                <!--android:textColor="@color/solid_black"-->
+                <!--android:textSize="10dp"></TextView>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvcMSISDN"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="0136081492"-->
+                <!--android:textColor="@color/solid_black"-->
+                <!--android:textSize="10dp"></TextView>-->
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/btnPayAnotherBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounder_border_textbox"
+            android:text="Pay Another BIll"
+            android:textColor="@color/solid_black" />
+
+        <Button
+            android:id="@+id/btnBackTOHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/solid_black"
+            android:background="@drawable/rounder_border_textbox"
+            android:text="Go Back" />
+    </LinearLayout>
+
+</RelativeLayout>

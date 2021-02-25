@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/normalfont14Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/mobile_no" />
+
+    <EditText
+        android:id="@+id/edCustAcc"
+        style="@style/normalfont14Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mobile_no_hint"
+        android:inputType="phone"></EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/normalfont14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_date" />
+
+        <TextView
+            android:id="@+id/edStartDate"
+            style="@style/normalfont14Input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="@string/start_date"
+            android:inputType="datetime"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/normalfont14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_date" />
+
+        <TextView
+            android:id="@+id/edEndDate"
+            style="@style/normalfont14Input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:hint="@string/end_date"
+            android:inputType="datetime"></TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCheckStats"
+        style="@style/normalfont14Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/check_status" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvMSISDN"
+            style="@style/gvFont18Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@string/mobileNo"></TextView>
+
+        <TextView
+            android:id="@+id/tvChkProduct"
+            style="@style/gvFont18Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@string/product"></TextView>
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            style="@style/gvFont18Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text="@string/date_time"></TextView>
+
+        <TextView
+            android:id="@+id/tvChkAmount"
+            style="@style/gvFont18Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:text="$$"></TextView>
+
+        <TextView
+            android:id="@+id/tvChkStatus"
+            style="@style/gvFont18Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="@string/status"></TextView>
+
+        <TextView
+            android:id="@+id/tvCount"
+            style="@style/gvFont18Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Cnt"></TextView>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvCheckCustStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"></ListView>
+
+</LinearLayout>

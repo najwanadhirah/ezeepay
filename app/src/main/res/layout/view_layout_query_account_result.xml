@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:minWidth="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lll1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvAccountNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/center2"
+            android:layout_below="@+id/center3"
+            android:textSize="18dp"
+            android:text="Account No"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lll1"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvAccountName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/center2"
+            android:layout_below="@+id/center3"
+            android:textSize="18dp"
+            android:text="Account Name "
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_toLeftOf="@+id/center1"
+        android:text="Account Balance"
+        />
+
+    <TextView
+        android:id="@+id/center1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+
+        android:textSize="14dp"
+        android:text=" : "
+        />
+
+    <TextView
+        android:id="@+id/tvAccountBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/center1"
+        android:textSize="14dp"
+        android:text="@string/RM100"
+        android:textStyle="bold"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center1"
+        android:textSize="14dp"
+        android:layout_toLeftOf="@+id/center2"
+        android:text="Statement Date"
+        />
+
+    <TextView
+        android:id="@+id/center2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center1"
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=" : "
+        />
+
+    <TextView
+        android:id="@+id/tvStatementDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/center2"
+        android:layout_below="@+id/center1"
+        android:text="2017-01-01"
+        android:textSize="14dp"
+        android:textStyle="bold"
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center2"
+        android:textSize="14dp"
+        android:layout_toLeftOf="@+id/center3"
+        android:text="Outstanding Balance"
+        />
+
+    <TextView
+        android:id="@+id/center3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center2"
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp"
+        android:text=" : "
+        />
+
+        <TextView
+            android:id="@+id/tvOutstandingBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/center2"
+            android:layout_below="@+id/center2"
+            android:textSize="14dp"
+            android:text="@string/RM100"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center4"
+        android:textSize="14dp"
+
+        android:layout_toLeftOf="@+id/center3"
+        android:text="Last Payment Amount"
+        />
+
+    <TextView
+        android:id="@+id/center5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center4"
+
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp"
+        android:text=" : "
+        />
+
+
+        <TextView
+            android:id="@+id/tvLastPaymentAmout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center5"
+            android:textSize="14dp"
+            android:text="2017-01-01"
+            android:layout_toLeftOf="@+id/center3"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:layout_height="wrap_content">
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/edAmounttopay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bootstrapSize="lg"
+        android:inputType="number"
+        app:roundedCorners="true"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:hint="Amount (RM)"
+        app:bootstrapBrand="secondary"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+
+            android:gravity="center|center_horizontal|center_vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/center5"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:text="Min Payment"
+
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/center2"
+                android:layout_below="@+id/center5"
+                android:textSize="12dp"
+                android:text=" : "
+
+                />
+
+            <TextView
+                android:id="@+id/tvDeno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+
+                />
+
+        </LinearLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnPayNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/solid_black"
+            android:text="Pay Now"
+            app:bootstrapBrand="danger"
+            android:layout_marginTop="30dp"
+            android:textSize="14dp"
+
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            />
+
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Main4Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:layout_collapseMode="pin"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        app:titleTextColor="@color/White"
+        app:subtitleTextColor="@color/White"
+        android:layout_width="match_parent">
+
+    </androidx.appcompat.widget.Toolbar>
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="2dp"
+        app:itemBackground="@color/White"
+        app:itemIconTint="@drawable/bottom_navi_seletor"
+        app:itemTextColor="@drawable/bottom_navi_seletor"
+        app:menu="@menu/navigation" />
+
+    <com.rt.qpay99.component.MovableFloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:visibility="gone"
+        app:backgroundTint="@color/Red"
+        app:srcCompat="@drawable/baseline_card_giftcard_white_36" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

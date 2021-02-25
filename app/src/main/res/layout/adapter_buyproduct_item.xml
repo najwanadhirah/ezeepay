@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    card_view:cardElevation="3dp"
+    card_view:cardMaxElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/selector_row"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/coverImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:src="@drawable/ic_no_image"></ImageView>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/solid_dark_grey"
+            android:textSize="12dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/tvStockInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="2dp"
+            android:scrollHorizontally="true"
+            android:text="Stock Available!"
+            android:textColor="@color/DarkRed"
+            android:textSize="10dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

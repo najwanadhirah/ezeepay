@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/normalfontBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="SILA MASUK NILAI" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/edValue"
+        style="@style/normalfontInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="SILA MASUK NILAI"
+        android:inputType="number" >
+    </EditText>
+
+    <TextView
+        style="@style/normalfontBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:text="NO. TELEPON" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/edMobileNo"
+        style="@style/normalfontInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="NO. TELEPON"
+        android:inputType="textPhonetic"
+        android:maxLength="15" >
+    </EditText>
+
+</LinearLayout>

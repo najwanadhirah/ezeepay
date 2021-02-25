@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/normalfont22Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Money International Sdn Bhd" />
+
+            <TextView
+                style="@style/normalfont22Input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="MBB	- 5123-4351-6944" />
+
+            <TextView
+                style="@style/normalfont22Input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CIMB	- 800-335-7361" />
+
+            <TextView
+                style="@style/normalfont22Input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PBB	- 315-222-0412" />
+
+            <TextView
+                style="@style/normalfont22Input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RHB	- 21212-5000-97429" />
+
+            <TextView
+                style="@style/normalfont22Input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HLB	- 1440-001-1097" />
+
+            <TextView
+                style="@style/normalfont22Input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMBANK	- 2-3620-1200-3704" />
+
+            <TextView
+                style="@style/normalfont22Input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALLIANCE	- 120880010037660" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/normalfont18Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_bank" />
+
+            <Spinner
+                android:id="@+id/spinnerMMBank"
+                style="@style/normalfont18Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/normalfont18Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_mm_merchant_code" />
+
+            <EditText
+                android:id="@+id/edMMAccount"
+                style="@style/normalfont18Input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/msg_mm_merchant_code"
+                android:inputType="number"
+                android:maxLength="8" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/normalfont18Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_amount" />
+
+            <EditText
+                android:id="@+id/edMMBankInAmount"
+                style="@style/normalfont18Input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/msg_amount"
+                android:inputType="number" >
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/normalfont18Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_mm_time" />
+
+            <EditText
+                android:id="@+id/edMMTime"
+                style="@style/normalfont18Input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/msg_mm_time"
+                android:inputType="number"
+                android:maxLength="12" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/normalfont18Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_gateway" />
+
+            <Spinner
+                android:id="@+id/spinnerMMGatewayNumber"
+                style="@style/normalfont18Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

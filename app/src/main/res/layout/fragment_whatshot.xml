@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <!--<com.rt.qpay99.component.ScrollTextView-->
+        <!--android:id="@+id/scrolltext"-->
+        <!--style="@style/movingTextStyle"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <WebView
+        android:id="@+id/wvWhatshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrolltext"
+        android:visibility="gone"></WebView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:id="@+id/llwh1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scrolltext"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:paddingLeft="5dp"
+                android:textColor="@color/Red"
+                android:textSize="10dp"
+
+                android:text="Sila Perhatian : ADMIN TIDAK AKAN minta sebarang pengesahan ( website password / android password / Telegram TAC )"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/Red"
+                android:paddingLeft="5dp"
+                android:textSize="10dp"
+                android:text="SILA JANGAN MEMBERI MAKLUMAT TERSEBUT KEPADA SESIAPA
+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Topup melalui Telegram ( qpay99bot )"
+                android:textSize="14dp"
+                android:padding="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="1.Click https://telegram.me/qpay99bot"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:layout_height="wrap_content"
+                android:text="2.Send REG MobileNo WebPassword to register"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:layout_height="wrap_content"
+                android:text="3. Keyin 8 digits TAC. "
+                android:textSize="12dp"
+                />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/btnTelegram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Try Now"
+                android:layout_margin="10dp"
+                android:textColor="@color/solid_black"
+                app:bootstrapBrand="primary"
+                app:bootstrapSize="lg"
+                app:buttonMode="regular"
+                app:roundedCorners="true"
+                app:showOutline="true" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llwh2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/llwh1"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/DarkGray"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:id="@+id/llwh3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llwh2"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Topup melalui Facebook Messenger"
+                android:textSize="14dp"
+                android:padding="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="1.Search QPay99 Messenger"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:layout_height="wrap_content"
+                android:text="2.Send REG MobileNo WebPassword to register"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:layout_height="wrap_content"
+                android:text="3. Keyin 8 digits TAC. "
+                android:textSize="12dp"
+                />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/btnFBMessenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Try Now"
+                android:layout_margin="10dp"
+                android:textColor="@color/solid_black"
+                app:bootstrapBrand="primary"
+                app:bootstrapSize="lg"
+                app:buttonMode="regular"
+                app:roundedCorners="true"
+                app:showOutline="true" />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/btnFBTutorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tutorial"
+                android:layout_margin="10dp"
+                android:textColor="@color/solid_black"
+                app:bootstrapBrand="danger"
+                app:bootstrapSize="lg"
+                app:buttonMode="regular"
+                app:roundedCorners="true"
+                app:showOutline="true" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7069957738539410/8983539706">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

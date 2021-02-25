@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.1">
+
+    <issue
+        id="NotSibling"
+        severity="Fatal"
+        message="`@id/tool_bar` is not a sibling in the same `RelativeLayout`"
+        category="Correctness"
+        priority="6"
+        summary="Invalid Constraints"
+        explanation="Layout constraints in a given `ConstraintLayout` or `RelativeLayout` should reference other views within the same relative layout (but not itself!)"
+        errorLine1="        android:layout_below=&quot;@id/tool_bar&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Dropbox\AndroidStudioSrc\SRS2 - Ezeepay2019\app\src\main\res\layout\activity_payment_process_ui.xml"
+            line="18"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotSibling"
+        severity="Fatal"
+        message="`@+id/scrolltext` is not a sibling in the same `RelativeLayout`"
+        category="Correctness"
+        priority="6"
+        summary="Invalid Constraints"
+        explanation="Layout constraints in a given `ConstraintLayout` or `RelativeLayout` should reference other views within the same relative layout (but not itself!)"
+        errorLine1="        android:layout_below=&quot;@+id/scrolltext&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Dropbox\AndroidStudioSrc\SRS2 - Ezeepay2019\app\src\main\res\layout\fragment_whatshot.xml"
+            line="19"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotSibling"
+        severity="Fatal"
+        message="`@+id/ll2` is not a sibling in the same `RelativeLayout`"
+        category="Correctness"
+        priority="6"
+        summary="Invalid Constraints"
+        explanation="Layout constraints in a given `ConstraintLayout` or `RelativeLayout` should reference other views within the same relative layout (but not itself!)"
+        errorLine1="        android:layout_below=&quot;@+id/ll2&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Dropbox\AndroidStudioSrc\SRS2 - Ezeepay2019\app\src\main\res\layout\view_layout_payment_process_buyitem.xml"
+            line="111"
+            column="9"/>
+    </issue>
+
+</issues>

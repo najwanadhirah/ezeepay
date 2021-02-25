@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact No." />
+
+        <EditText
+            android:id="@+id/edContact"
+            style="@style/normalfont18Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvContact"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:hint="601xxxxxxxxx"
+            android:inputType="phone"
+            android:minWidth="200dp" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/tvState" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="State" /> -->
+
+        <Spinner
+            android:id="@+id/spinner1"
+            style="@style/normalfont18Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:entries="@array/country_array"
+            android:gravity="right"
+            android:prompt="@string/select_state" />
+
+        <!-- <AutoCompleteTextView -->
+        <!-- android:id="@+id/acState" -->
+        <!-- style="@style/normalfont18Input" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignBaseline="@+id/tvState" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:gravity="right" -->
+        <!-- android:hint="Select State" -->
+        <!-- android:minWidth="200dp" > -->
+        <!-- </AutoCompleteTextView> -->
+    </RelativeLayout>
+
+</RelativeLayout>

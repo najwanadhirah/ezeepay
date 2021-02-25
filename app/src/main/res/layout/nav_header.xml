@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:id="@+id/headerLayout"
+
+    android:layout_marginTop="24dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvAccountName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/solid_black"
+        android:layout_gravity="center"
+        android:padding="2dp"
+        android:gravity="center_horizontal|center_vertical|center"
+        android:text="Android Studio" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="right"
+            android:foregroundGravity="right"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Bal " />
+
+        <TextView
+            android:id="@+id/dcenter"
+
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:text=":" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:id="@+id/tvAgentBal"
+            android:textColor="@color/primary_gradient_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Loading..." />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCheckProfit"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="2dp"
+
+            android:foregroundGravity="right"
+            android:layout_toLeftOf="@id/dcenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Profit >>" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="right"
+            android:foregroundGravity="right"
+            android:layout_toLeftOf="@id/dcenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Profit" />
+
+        <TextView
+            android:id="@+id/dcenter2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:text=":" />
+
+        <TextView
+            android:layout_toRightOf="@+id/dcenter"
+            android:layout_weight="1"
+            android:id="@+id/tvProfit"
+            android:textColor="@color/primary_gradient_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Loading..." />
+    </LinearLayout>
+
+
+</LinearLayout>

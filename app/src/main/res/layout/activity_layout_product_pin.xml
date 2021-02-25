@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:minHeight="80dp"
+        android:minWidth="80dp"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/pilih_nilai_my"
+        android:textColor="@color/solid_black"
+        android:textSize="18sp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/solid_black"
+        android:textSize="18sp"
+        >
+    </TextView>
+
+    <ViewFlipper
+        android:id="@+id/productViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/vfVinPrice"
+            layout="@layout/view_layout_gridview_pin_price" />
+
+        <include
+            android:id="@+id/vfPinBuy"
+            layout="@layout/view_layout_product_buy" />
+    </ViewFlipper>
+
+</LinearLayout>

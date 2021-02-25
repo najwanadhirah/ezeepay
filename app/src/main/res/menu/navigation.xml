@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_settings_cell_black_24"
+        android:title="Topup" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_dashboard"-->
+<!--        android:icon="@drawable/baseline_local_offer_black_24"-->
+<!--        android:title="Buy Product" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_QPromo"-->
+        <!--android:icon="@drawable/outline_whatshot_white_24"-->
+        <!--android:title="QPromo" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_reward"-->
+        <!--android:icon="@drawable/baseline_card_giftcard_black_24"-->
+        <!--android:title="QPoints" />-->
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/baseline_account_box_black_24"
+        android:title="My Account" />
+
+</menu>
