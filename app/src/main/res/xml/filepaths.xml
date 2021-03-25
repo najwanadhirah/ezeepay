@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    <cache-path name="shared_images" path="images/"/>-->
+    <!--    &lt;!&ndash;<cache-path name="rt" path="."/>&ndash;&gt;-->
+    <!--    <external-path name="my_images" path="Android/data/com.rt.qpay99/files/Pictures" />-->
+    <!--    <files-path name="rt" path="rtf/" />-->
+
+    <cache-path name="shared_images" path="images/"/>
+    <!--<external-path name="rt" path=""/>-->
+    <!--<external-path name="my_images" path="images/" />-->
+    <external-path name="my_images" path="Android/data/com.rt.qpay99/files/Pictures" />
+    <files-path name="rt"  />
+
+</paths>
+<!--<paths xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <cache-path name="shared_images" path="images/"/>-->
+<!--    &lt;!&ndash;<cache-path name="rt" path="."/>&ndash;&gt;-->
+<!--    <external-path name="my_images" path="Android/data/com.rt.qpay99/files/Pictures" />-->
+<!--    <files-path name="rt" path="rtf/" />-->
+<!--</paths>-->

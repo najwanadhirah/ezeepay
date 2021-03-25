@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_njoisign_up_ui"
+    android:layout_width="match_parent"
+    android:background="@color/bg_color"
+    android:layout_height="match_parent"
+    tools:context="com.rt.qpay99.activity.ui.ProductCategoryItemDetailUI">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/header_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/bg_color"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    style="@style/HomeTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Price" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textColor="@color/Red"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSelectColor"
+                    style="@style/HomeTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Color" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mRecyclerViewColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvEReload"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvSelectMemory"
+                    style="@style/HomeTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Memory" />
+
+                <GridView
+                    android:id="@+id/rvMemory"
+                    android:layout_below="@+id/llcolor2"
+                    android:layout_width="wrap_content"
+                    android:numColumns="4"
+                    android:horizontalSpacing="5dp"
+                    android:verticalSpacing="5dp"
+                    android:listSelector="@drawable/memory_selector"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content"></GridView>
+
+                <GridView
+                    android:id="@+id/rvQuantity"
+                    android:layout_below="@+id/llcolor2"
+                    android:layout_width="wrap_content"
+                    android:numColumns="4"
+                    android:horizontalSpacing="5dp"
+                    android:verticalSpacing="5dp"
+                    android:listSelector="@drawable/memory_selector"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content"></GridView>
+
+
+                <TextView
+                    android:id="@+id/tvSelectGrade"
+                    style="@style/HomeTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Grade" />
+
+                <GridView
+                    android:id="@+id/rvGrade"
+                    android:layout_below="@+id/llcolor2"
+                    android:layout_width="wrap_content"
+                    android:numColumns="4"
+                    android:horizontalSpacing="5dp"
+                    android:verticalSpacing="5dp"
+                    android:listSelector="@drawable/memory_selector"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content"></GridView>
+
+
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_marginTop="20dp"
+                android:id="@+id/chkAccBox"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:buttonTint="@color/qpay"
+                android:text="Tempered Glass, USB Cable, Power Adaptor, Casing, Box (RM30)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/border_shadow"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/HomeTitleStyleNoPadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Details" />
+
+                <TextView
+                    style="@style/HomeTitleStyleNoPadding"
+                    android:id="@+id/tvColorname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* Black Color" />
+
+                <TextView
+                    android:id="@+id/tvDescr"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvDescr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvDescr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvDescr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvDescr4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvDescr5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvDescr6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnProcessPayment"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/solid_black"
+                    android:background="@drawable/rounder_border_textbox"
+                    android:text="Process to CheckOut" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/solid_black"
+                    android:background="@drawable/rounder_border_textbox"
+                    android:text="Cancel" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

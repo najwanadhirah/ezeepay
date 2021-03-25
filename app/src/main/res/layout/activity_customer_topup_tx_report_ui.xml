@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_customer_topup_tx_report_ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.rt.qpay99.activity.ui.CustomerTopupTxReportUI">
+
+    <include
+        android:id="@+id/productPrice"
+        layout="@layout/view_layout_navigation_bar" />
+
+    <LinearLayout
+        android:id="@+id/llDate"
+        android:layout_below="@+id/productPrice"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/bootstrap_brand_warning"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-01-01"
+            />
+
+        <TextView
+
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   to   "
+            />
+
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:text="2017-01-01"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvCustomerTopupTx"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llDate"
+
+        ></ListView>
+
+</RelativeLayout>

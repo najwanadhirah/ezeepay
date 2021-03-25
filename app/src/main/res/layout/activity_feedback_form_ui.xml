@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QPay99 Feedback Form" />
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrolltext"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounder_border_textbox"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+        <EditText
+            android:id="@+id/edFeedback"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:maxLines="10"
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Submit"
+        android:textColor="@color/solid_black" />
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvMSISDN"
+            style="@style/gvFont14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="0166572577" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvChkProduct"
+            style="@style/gvFont14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="TUNETALK" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvChkDatetime"
+            style="@style/gvFont14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text="2017-01-01 00.00.00"
+             >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvChkAmount"
+            style="@style/gvFont14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:text="999" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvChkStatus"
+            style="@style/gvFont14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="R" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvChkDN"
+            style="@style/gvFont10Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:visibility="gone"
+            android:text="@string/OK" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvChkCode"
+            style="@style/gvFont10Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:visibility="gone"
+            android:text="@string/OK" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvPrintCount"
+            android:layout_width="0dp"
+            style="@style/gvFont14Style"
+            android:text="1"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

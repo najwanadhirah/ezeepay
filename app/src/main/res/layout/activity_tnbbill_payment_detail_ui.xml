@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:minHeight="80dp"
+                android:minWidth="80dp"
+                >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/pilih_nilai_my"
+                android:textColor="@color/solid_black"
+                android:textSize="18sp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/solid_black"
+                android:textSize="14sp"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/tvProductDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvBalance"
+                android:layout_centerHorizontal="true"
+                android:clickable="false"
+                android:paddingTop="2dp"
+                android:text="@string/pilih_nilai_my"
+                android:textColor="@color/solid_black"
+                android:textSize="12sp"
+            ></TextView>
+
+            <LinearLayout
+                android:id="@+id/llClickhere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/commission"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="Click here"
+                    android:textColor="@color/Red"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llItem"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProductDesc"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvProductName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"
+                    android:text="Nilai (RM)"
+                    android:textColor="@color/solid_black"
+                    android:textSize="14sp"
+                    ></TextView>
+
+                <EditText
+                    android:id="@+id/edAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAmount"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Nilai / Amount"
+                    android:inputType="number"
+                    android:minHeight="50dp"
+                    android:minWidth="300dp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edAmount"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"
+                    android:text="Akaun No."
+                    android:textColor="@color/solid_black"
+                    android:textSize="14sp"
+                   ></TextView>
+
+                <LinearLayout
+                    android:id="@+id/llacc"
+                    android:layout_below="@+id/tvProductDesc"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edAccount"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tvAcc"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:minHeight="50dp"
+                        android:minWidth="220dp"
+                        android:hint="14 digit Bill No:"
+                        />
+
+                    <Button
+                        android:id="@+id/btnScan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp"
+                        android:minWidth="80dp"
+                        android:text="Scan"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvcAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edAccount"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"
+                    android:text="Pengesahan akaun No."
+                    android:textColor="@color/solid_black"
+                    android:textSize="14sp"
+                   ></TextView>
+
+                <EditText
+                    android:id="@+id/edcAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvcAcc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:hint="14 digit Bill No:"
+                    android:minHeight="50dp"
+                    android:minWidth="300dp"
+                    android:textAlignment="center" />
+
+
+                <TextView
+                    android:id="@+id/tvBillNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edAccount"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"
+                    android:text="Bil No."
+                    android:textColor="@color/solid_black"
+                    android:textSize="14sp"
+                  ></TextView>
+
+                <EditText
+                    android:id="@+id/edBillNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvcAcc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:hint="14 digit Bill No:"
+                    android:minHeight="50dp"
+                    android:minWidth="300dp"
+                    android:textAlignment="center" />
+
+
+
+                <TextView
+                    android:id="@+id/tvNoti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edcAccount"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"
+                    android:text="No telepon pelanggan"
+                    android:textColor="@color/solid_black"
+                    android:textSize="14sp"
+                   ></TextView>
+
+                <EditText
+                    android:id="@+id/edCustMSISDN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNoti"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:hint="01xxxxxxxxx"
+                    android:inputType="number"
+                    android:minHeight="50dp"
+                    android:minWidth="300dp"
+                    android:enabled="false"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/cbBillSMS"
+                    android:layout_width="wrap_content"
+                    android:minWidth="300dp"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/edLoginPass"
+                    android:text="Hantar notifikasi SMS ke customer (RM0.15)"
+                    android:textColor="@color/solid_black" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnHantar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llItem"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:minHeight="50dp"
+                android:layout_margin="16dp"
+                android:text="Hantar"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+

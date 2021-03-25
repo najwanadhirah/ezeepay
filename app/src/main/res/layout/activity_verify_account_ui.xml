@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ui.VerifyAccountUI">
+
+    <include
+        android:id="@+id/tool_bar"
+        android:visibility="gone"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tvinfo1"
+        style="@style/RTTitleStyleDarkGray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Please Submit your Front &amp; Back Identity Card"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnFrontIC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/rounder_border"
+                android:padding="5dp"
+                android:text="Upload Front IC"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <ImageView
+                android:id="@+id/frontIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icfront"
+                app:layout_constraintTop_toBottomOf="@+id/btnFrontIC" />
+
+            <Button
+                android:id="@+id/btnBackIc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/rounder_border"
+                android:padding="5dp"
+                android:text="Upload Back IC"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frontIC" />
+
+
+            <ImageView
+                android:id="@+id/backIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icback"
+                app:layout_constraintTop_toBottomOf="@+id/btnBackIc" />
+
+
+
+            <Button
+                android:id="@+id/btnselfie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/rounder_border"
+                android:padding="5dp"
+                android:text="IC &amp; User"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/backIC" />
+
+
+            <ImageView
+                android:id="@+id/imgSelfie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/simpack_user"
+                app:layout_constraintTop_toBottomOf="@+id/btnselfie" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/rounder_border"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgSelfie" />
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/primary_gradient"
+                android:max="100"
+                android:progress="0"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/btnSubmit" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/productPrice"
+        layout="@layout/view_layout_navigation_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:minHeight="150dp"
+                android:minWidth="150dp"
+                android:paddingTop="10dp" >
+            </ImageView>
+
+            <TextView
+                style="@style/normalfont22Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/ex_rm" />
+
+            <TextView
+                style="@style/normalfont14Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Max. RM3000" />
+
+            <EditText
+                android:id="@+id/edMYCurrency"
+                style="@style/EditTextCenterAlignNormalfont24Input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="RM1"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColorHint="@color/DarkGray" >
+            </EditText>
+
+            <TextView
+                style="@style/normalfont22Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Nilai Tukar" />
+
+            <TextView
+                android:id="@+id/tvXChangeRate"
+                style="@style/normalfont14Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="RM1=Rp.3585" />
+
+            <TextView
+                android:id="@+id/tvXChangeRateDate"
+                style="@style/normalfont14Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Date" />
+
+            <EditText
+                android:id="@+id/edXChangeRate"
+                style="@style/EditTextCenterAlignNormalfont24Input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:hint="RM1=Rp.3585"
+                android:inputType="number"
+                android:maxLength="4" >
+            </EditText>
+
+            <TextView
+                style="@style/normalfont22Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Indonesian Rupiah (Rp.)" />
+
+            <EditText
+                android:id="@+id/edIDCurrency"
+                style="@style/EditTextCenterAlignNormalfont24Input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Rp.1juta = RM280"
+                android:inputType="number"
+                android:textColorHint="@color/DarkGray" >
+            </EditText>
+
+            <TextView
+                style="@style/normalfont22Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Kad Ahli (10 digit)" />
+
+            <EditText
+                android:id="@+id/edMMId"
+                style="@style/EditTextCenterAlignNormalfont24Input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="123 456 7890"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColorHint="@color/DarkGray" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/normalfont18Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Pilih gateway no." />
+
+                <Spinner
+                    android:id="@+id/spinnerGatewayNo"
+                    style="@style/normalfont18Input"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSendSMS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/orange"
+                android:minWidth="400dp"
+                android:text="Hantar" />
+
+            <TextView
+                style="@style/normalfont14Red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="Customer yang tidak ada kah ahli sila daftar dulu." />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:minWidth="200dp"
+                android:text="Daftar Customer" />
+
+            <LinearLayout
+                android:id="@+id/llMMAppDL"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvMMAppDL"
+                    style="@style/normalfont14Blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Klick sini untuk muat turun MM App." />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EzeePay</string>
+    <string name="draw_1">- 礼物不可兑换</string>
+    <string name="draw_2">- 兑换100张票后开始抽奖</string>
+    <string name="draw_3">- 每个QPay99会员最多可兑换10张e-tiket</string>
+    <string name="draw_4">- 兑换的QPoints不可退款。</string>
+    <string name="Redeem_now">立即兑换</string>
+
+    <string-array name="country_array">
+        <item>Johor</item>
+        <item>Kedah</item>
+        <item>Kelantan</item>
+        <item>Melaka</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Perak</item>
+        <item>Perlis</item>
+        <item>Pulau Pinang</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Selangor</item>
+        <item>Terengganu</item>
+        <item>WP Kuala Lumpur</item>
+        <item>WP Labuan</item>
+        <item>WP Putra Jaya</item>
+    </string-array>
+    <string name="luckydraw">幸运抽奖</string>
+    <string name="please_select">"请选择 "</string>
+    <string name="sendfeedback">发送反馈</string>
+    <string name="qpoints_redemptions">QPoints 兑换</string>
+    <string name="daily_bonus">获取每日登录QPoints</string>
+    <string name="share_win">摇一摇</string>
+    <string name="nav_topup">充值</string>
+    <string name="productInfo">产品信息</string>
+    <string name="commission">佣金</string>
+
+</resources>

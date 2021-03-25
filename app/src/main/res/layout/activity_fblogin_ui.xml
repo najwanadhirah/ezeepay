@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="@color/Gray"
+        android:textSize="32sp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|normal"
+        android:layout_marginTop="20dp"
+        android:typeface="sans">
+    </TextView>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Untuk topup melalui Facebook Mesengger, Sila tekan butang Faceook Login "
+        android:textColor="@color/Gray"
+        android:textSize="22sp"
+        android:layout_below="@+id/welcome"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|normal"
+        android:layout_marginTop="20dp"
+        android:typeface="sans">
+    </TextView>
+
+
+    <!--<com.facebook.login.widget.LoginButton-->
+        <!--android:id="@+id/login_button"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_below="@+id/info"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minWidth="300dp"-->
+
+        <!--/>-->
+
+    <TextView
+        android:id="@+id/keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Format untuk Topup melalui FACEBOOK MESSENGER"
+        android:textColor="@color/Gray"
+        android:textSize="18sp"
+
+        android:layout_gravity="left"
+        android:textStyle="bold|normal"
+        android:layout_marginTop="30dp"
+        android:typeface="sans">
+    </TextView>
+
+    <TextView
+        android:id="@+id/keyformat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;MOBILENO&gt;.&lt;KEYWORD&gt;&lt;AMOUNT&gt;\n\n016572577.m5 (Topup Maxis RM5) \n0166572577.d5 (Topup DiGi RM5)\n0166572577.c5 (Topup CELCOM RM5)\n0166572577.u5 (Topup UMOBILE RM5)\n0166572577.t5 (Topup TUNETALK RM5)\n0166572577.x5 (Topup XOX RM5)"
+        android:textColor="@color/Gray"
+        android:textSize="18sp"
+        android:layout_below="@+id/keyword"
+        android:layout_gravity="left"
+        android:textStyle="bold|normal"
+        android:layout_marginTop="10dp"
+        android:typeface="sans">
+    </TextView>
+
+
+</RelativeLayout>

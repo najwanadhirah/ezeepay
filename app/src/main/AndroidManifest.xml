@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rt.qpay99"
+>
+
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+
+<!--    <uses-feature-->
+<!--        android:name="android.hardware.telephony"-->
+<!--        android:required="false" />-->
+
+    <!-- <permission -->
+    <!-- android:name="com.rt.qpay99.permission.C2D_MESSAGE" -->
+    <!-- android:protectionLevel="signature" /> -->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".SRSApp"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activity.ui.AgentMap"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ui.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity android:name=".activity.ui.WebViewUI" android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <activity android:name=".ProductTrackingUI"></activity>
+        <activity
+            android:name=".Main5Activity"
+            android:label="@string/title_activity_main5"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ui.TACUI"
+            android:label="TAC" />
+        <activity
+            android:name=".activity.ui.LoginUI"
+            android:label="Login to QPay99"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ui.TestPrintUI"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activity.ui.ProductDetailUI_v2"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ui.ProductInternationalDetailUI_v2"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ui.IDMoneyPinUI"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ui.PayBillDetailUI"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ui.UltilitiesBillDetailUI"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ui.PinDetailUI"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ui.SimDetailUI"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.service.DeviceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gcm.GCMNotificationActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ui.CheckCustomerTxStatusUI"
+            android:label="Check Tx"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".activity.ui.CheckCustomerTxByDNUI"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".activity.ui.AgentInfoUI"
+            android:label="Agent Info"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.ui.ReportUI"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.ui.RegisterUI"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.ui.ContactUSUI"
+            android:parentActivityName=".MainActivity" />
+
+        <receiver
+            android:name=".receiver.OTPReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="in.co.madhur.chatbubblesdemo.gcm" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.GCMService" />
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.MyFirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="50e405706210b09ceea8df65b356b5c6dab7538f" />
+
+        <activity android:name=".activity.ui.FBLoginUI" />
+        <activity
+            android:name=".activity.ui.ShareViaUI"
+            android:label="@string/title_activity_share_via_ui"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".activity.ui.BankInListUI"
+            android:parentActivityName=".MainActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/light_green" />
+
+        <activity
+            android:name=".activity.ui.LoginBiometric"
+            android:label="Login to fingerprint"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activity.ui.ReportListUI"
+            android:label="Report List"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".activity.ui.CustomerTopupTxReportUI" />
+        <activity
+            android:name=".activity.ui.BuyPrinterUI"
+            android:label="@string/title_activity_buy_printer_ui"
+            android:parentActivityName=".activity.ui.LoginUI" />
+        <activity
+            android:name=".activity.ui.QueryAcountUI"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.ui.ReportAgentSales"
+            android:label="Report Agent Sales"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.ui.ShareCreditUI"
+            android:label="Share Credit"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.ui.VerifyAccountUI"
+            android:label="Verify Account"
+            android:parentActivityName=".MainActivity" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="rob.payezqp.com.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name=".activity.ui.ProductCategoryItemDetailUI"
+            android:parentActivityName=".Main4Activity" />
+        <activity
+            android:name=".activity.ui.ProductCategoryItemListUI"
+            android:parentActivityName=".Main4Activity" />
+        <activity
+            android:name=".activity.ui.FeedbackFormUI"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.ui.PaymentProcessUI"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Main4Activity"
+            android:label="@string/title_activity_main4" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.ui.FBShareUI"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".activity.ui.PointRedeemPageUI" />
+        <activity android:name=".activity.ui.PointRedeemDetailPageUI" />
+        <activity android:name=".activity.ui.LuckyDrawPageUI" />
+        <activity android:name=".activity.ui.LuckyDrawDetailsUI" />
+        <activity
+            android:name=".activity.ui.AgentBIList"
+            android:label="BI List"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".activity.ui.ShakeAndWinUI" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7069957738539410~3761729697" />
+
+        <activity
+            android:name=".activity.ui.ShareReceiptUI"
+            android:parentActivityName=".MainActivity" />
+
+    </application>
+
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+
+</manifest>

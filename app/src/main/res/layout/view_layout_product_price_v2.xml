@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.rt.qpay99.activity.ui.ProductDetailUI_v2"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/tvproduct1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:gravity="left"
+        android:paddingTop="10dp"
+        android:text="@string/pilih_nilai_my"
+        android:textColor="@color/solid_black"
+        android:textSize="22sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvproduct2"
+        android:layout_below="@+id/tvproduct1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:gravity="left"
+        android:text="@string/pilih_nilai_en"
+        android:textColor="@color/solid_black"
+        android:textSize="20sp"
+        android:textStyle="italic" >
+    </TextView>
+
+    <GridView
+        android:id="@+id/gvTopup"
+        android:layout_below="@+id/tvproduct2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"></GridView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/tblrLain"
+        android:layout_alignParentBottom="true"
+        style="@style/priceTAG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/linear_layout_border"
+        android:clickable="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvlain_lain"
+            style="@style/priceTAGfont"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/lain_lain"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nav_btn_left"
+        style="@style/navigationButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="100dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/left_grey"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:visibility="invisible" >
+    </Button>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rt.qpay99.activity.ui.BuyPrinterUI">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/imgsrsmobileprinter"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+
+
+                />
+
+            <TextView
+                android:layout_below="@+id/imgsrsmobileprinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="28dp"
+                android:text="SRS Mobile Printer" />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/btnBuyNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/solid_black"
+                android:text="@string/buy_now"
+                app:bootstrapBrand="danger"
+                app:bootstrapSize="md"
+                app:buttonMode="regular"
+                app:showOutline="true"
+                app:roundedCorners="true"
+                />
+
+            <TextView
+                android:layout_below="@+id/imgsrsmobileprinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left"
+                android:text="3 months warranty" />
+            <TextView
+                android:layout_below="@+id/imgsrsmobileprinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Direct thermal printing method" />
+            <TextView
+                android:layout_below="@+id/imgsrsmobileprinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Long lasting Lithium-ion battery (7.4V, 2000mAh) " />
+
+            <TextView
+                android:layout_below="@+id/imgsrsmobileprinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Paper width: 57±0.5mm" />
+
+            <TextView
+                android:layout_below="@+id/imgsrsmobileprinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Paper Roll Diameter: 40mm" />
+
+            <TextView
+                android:layout_below="@+id/imgsrsmobileprinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Continue printing when battery in charging" />
+
+
+
+            <TextView
+                android:layout_below="@+id/imgsrsmobileprinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="left"
+                android:text="Easy to store setup parameters by Setup Tools" />
+
+
+
+
+            />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

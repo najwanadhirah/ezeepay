@@ -1,0 +1,408 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+<!--        <item name="android:windowContentTransitions">true</item>-->
+<!--        <item name="windowActionBar">true</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="android:textColorSecondary">@color/solid_white</item>
+
+        <item name="colorPrimaryVariant">@color/green</item>
+        <item name="colorSecondaryVariant">@color/green</item>
+        <item name="colorSurface">@color/green</item>
+        <item name="colorOnPrimary">@color/green</item>
+        <item name="colorOnSecondary">@color/green</item>
+        <item name="colorOnBackground">@color/green</item>
+        <item name="colorOnError">@color/green</item>
+        <item name="colorOnSurface">@color/green</item>
+        <item name="scrimBackground">@color/mtrl_scrim_color</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.MaterialComponents.Headline1
+        </item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.MaterialComponents.Headline2
+        </item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.MaterialComponents.Headline3
+        </item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MaterialComponents.Headline4
+        </item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MaterialComponents.Headline5
+        </item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MaterialComponents.Headline6
+        </item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MaterialComponents.Subtitle1
+        </item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MaterialComponents.Subtitle2
+        </item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
+
+        <item name="textInputStyle">
+            @style/MyCustomTextInputStyle
+        </item>
+        <item name="editTextStyle">
+            @style/MyCustomEditTextStyle
+        </item>
+
+
+    </style>
+
+    <style name="MyCustomTextInputStyle" parent="Widget.Design.TextInputLayout">
+        <item name="boxStrokeColor">@color/green</item>
+        <item name="boxStrokeWidth">2dp</item>
+
+    </style>
+
+    <style name="MyCustomEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="customEditText" parent="Widget.AppCompat.EditText">
+        <!--<item name="android:textColorHint">@color/colorPrimary</item>-->
+        <!--<item name="android:background">@drawable/border</item>-->
+        <!--<item name="android:paddingLeft">10dp</item>-->
+        <!--<item name="android:padding">5dp</item>-->
+    </style>
+
+    <style name="AlertDialogCustom">
+        <item name="colorControlNormal">@color/Gray</item>
+        <item name="colorControlActivated">@color/primary</item>
+        <item name="colorControlHighlight">@color/primary</item>
+
+    </style>
+
+    <style name="priceTAG">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingRight">10sp</item>
+        <item name="android:paddingLeft">10sp</item>
+        <item name="android:minWidth">80dp</item>
+    </style>
+
+    <style name="confirmButton">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">120dp</item>
+    </style>
+
+    <style name="confirmButtonStyle">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/solid_white</item>
+    </style>buttonStyle
+
+
+
+    <style name="priceTAGfont">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/solid_white</item>
+    </style>
+
+    <style name="GSTpriceTAGfont">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/solid_white</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/solid_white</item>
+    </style>
+
+    <style name="RTTitleStyleDarkGrayNormal">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@color/DarkGray</item>
+        <item name="android:paddingBottom">5dp</item>
+
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="RTEditTextStyle">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textColor">@color/solid_black</item>
+        <item name="android:textColorHint">@color/solid_grey</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">7dp</item>
+    </style>
+
+    <style name="normalfontBlack">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/solid_black</item>
+    </style>
+
+    <style name="normalfont14Black">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/solid_black</item>
+    </style>
+
+    <style name="normalfont14Red">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/Red</item>
+    </style>
+
+    <style name="normalfont14Blue">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/Blue</item>
+    </style>
+
+    <style name="normalfont18Black">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/solid_black</item>
+    </style>
+
+    <style name="normalfont22Black">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/solid_black</item>
+    </style>
+
+    <style name="normalfont18Red">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/solid_red</item>
+    </style>
+
+    <style name="normalfont18Input">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="EditTextCenterAlignNormalfont24Input">
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="EditTextfont24Input">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="normalfont22Input">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="normalfont14Input">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="normalfontInput">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="normalBlackfontInput">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColorHint">@color/solid_black</item>
+        <item name="android:textColor">@color/solid_black</item>
+    </style>
+
+    <style name="gvFontStyle">
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/solid_black</item>
+    </style>
+
+    <style name="gvFont10Style">
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/solid_black</item>
+    </style>
+
+    <style name="gvFont14Style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/solid_black</item>
+    </style>
+
+    <style name="gvFont18Style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/solid_black</item>
+    </style>
+
+    <style name="gvRightFontStyle">
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/solid_black</item>
+    </style>
+
+    <style name="gvButtonStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/solid_black</item>
+    </style>
+
+    <style name="normalfont">
+        <item name="android:textSize">18px</item>
+        <item name="android:textColor">@color/solid_white</item>
+    </style>
+
+    <style name="navigationButtonStyle" parent="android:style/Widget.Button">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="navigationBarStyle">
+        <!--<item name="android:textColor">@color/solid_white</item>-->
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="buttonStyle" parent="android:style/Widget.Button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_button</item>
+    </style>
+
+    <style name="gvFontStyle12">
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/orange</item>
+        <item name="android:textColor">@color/solid_black</item>
+    </style>
+
+    <style name="HomeTitleStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">20px</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="HomeTitleStyleNoPadding">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">20px</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="RTHeader">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@color/solid_black</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">22dp</item>
+    </style>
+
+    <style name="SCANPayStyle">
+        <item name="android:textColor">@color/solid_black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="RTTitleStyle">
+        <item name="android:textColor">@color/solid_black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="RTButtonStyle">
+        <item name="android:background">@color/primary</item>
+        <item name="android:textColor">@color/solid_white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="RTTitleStyleDarkGray">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@color/DarkGray</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="movingTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">#ff4500</item>
+        <item name="android:textColor">#ff4500</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarTitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <!-- include other attributes you want to change: textColor, textStyle, etc -->
+    </style>
+
+    <style name="ToolbarSubtitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.rt.qpay99.component.ScrollTextView
+                android:id="@+id/scrolltext"
+                style="@style/movingTextStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/tags_rounded_corners"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll1120"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scrolltext"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:minWidth="300dp"
+                        android:text="Name"
+                        android:textColor="@color/DarkBlue"
+                        android:textSize="14sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llll21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll1120"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <EditText
+                        android:id="@+id/edRegName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/edittext_border"
+                        android:drawablePadding="12dip"
+                        android:gravity="left|center_vertical"
+                        android:hint="User Name"
+
+                        android:padding="10dp"
+                        android:textColor="@color/solid_black"
+                        android:textColorHint="@color/solid_grey"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llll21"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:minWidth="300dp"
+                        android:text="Mobile No"
+                        android:textColor="@color/DarkBlue"
+                        android:textSize="14sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll3"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <EditText
+                        android:id="@+id/edRegMobileNo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_border"
+                        android:drawablePadding="12dip"
+                        android:gravity="left|center_vertical"
+                        android:hint="601xxxxxxxx"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColor="@color/solid_black"
+                        android:textColorHint="@color/solid_grey"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll4"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:minWidth="300dp"
+                        android:text="* Referrer from you"
+                        android:textColor="@color/solid_black"
+                        android:textSize="14sp"
+                        android:textStyle="italic"></TextView>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll5"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/LightGrey"
+                    android:text="Daftar"
+                    android:textColor="@color/solid_black"
+                    android:textSize="14sp"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnLogin"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvAgentWeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="left|center_vertical"
+                    android:minWidth="300dp"
+                    android:text="** Untuk Topup melalui website/pc, sila masuk www.agent.qpay99.com"
+                    android:textColor="@color/solid_black"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvTutorial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAgentWeb"
+                    android:layout_marginTop="20dp"
+                    android:gravity="left|center_vertical"
+                    android:minWidth="300dp"
+                    android:text="@string/qpay_tutor"
+                    android:textColor="@color/solid_black"
+                    android:textSize="12sp"></TextView>
+
+
+                <TextView
+                    android:id="@+id/tvNewAgentMobileWeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAgentWeb"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:gravity="left|center_vertical"
+                    android:minWidth="300dp"
+                    android:text=">>> New Agent Mobile Web"
+                    android:textColor="@color/solid_black"
+                    android:textSize="12sp"></TextView>
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-7069957738539410/8983539706"></com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

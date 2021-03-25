@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="Product"
+        android:textColor="@color/solid_black"
+        android:textSize="16dp"
+        android:textStyle="bold"></TextView>
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_weight="0"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgCProduct"
+            android:layout_width="125dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iphone7_rosegold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCPhoneModal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="3dp"
+                android:text="Iphone 5"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvcPhoneColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="3dp"
+                android:text="Space Gray"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvCPhoneGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="3dp"
+                android:text="Grade A"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvCMemory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="3dp"
+                android:text="16 GB"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:id="@+id/tvCPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="3dp"
+                android:text="RM 1000.00"
+                android:textColor="@color/Red"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvCUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="1dp"
+            android:text="Testing  user"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="1dp"
+            android:text="60126112184" />
+
+        <TextView
+            android:id="@+id/tvCAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="1dp"
+            android:text="818, 8th Floor Block A ,Kelana Centre Point" />
+
+        <TextView
+            android:id="@+id/tvCAddress1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="1dp"
+            android:text="Jalan SS7/19, Kelana Jaya " />
+
+        <TextView
+            android:id="@+id/tvCAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="1dp"
+            android:text="47301 Selangor" />
+
+        <TextView
+            android:id="@+id/tvCEmaillAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:padding="1dp"
+            android:text="kimwei.chew@gmail.com" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ll2"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/solid_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Estimated Total: " />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTotalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="RM 5.00"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="*includes 0% GST"
+                    android:textColor="@color/Red"
+                    android:textSize="10dp"
+                     />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnProcessCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounder_border_textbox"
+            android:text="Next"
+            android:textColor="@color/solid_black" />
+
+        <Button
+            android:elevation="5dp"
+            android:id="@+id/btnCheckOutCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border_textbox"
+            android:text="Cancel" />
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

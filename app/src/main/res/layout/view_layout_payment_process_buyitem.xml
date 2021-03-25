@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tv11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="Product"
+        android:textColor="@color/solid_black"
+        android:textSize="16dp"
+        android:textStyle="bold"></TextView>
+    <LinearLayout
+        android:id="@+id/ll11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv11"
+        android:layout_weight="0"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgCProduct1"
+            android:layout_width="125dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+             />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCPhoneModal1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="3dp"
+                android:text="Iphone 5"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvcPhoneColor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="3dp"
+                android:text="Space Gray"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvCPhoneGrade1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="3dp"
+                android:text="Grade A"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvCMemory1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="3dp"
+                android:text="16 GB"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:id="@+id/tvCPrice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="3dp"
+                android:text="RM 1000.00"
+                android:textColor="@color/Red"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ll2"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/solid_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Estimated Total: " />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTotalPrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="RM 5.00"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="*includes 0% GST"
+                    android:textColor="@color/Red"
+                    android:textSize="10dp"
+                     />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnProcessCheckOut1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounder_border_textbox"
+            android:text="Next"
+            android:textColor="@color/solid_black" />
+
+        <Button
+            android:elevation="5dp"
+            android:id="@+id/btnCheckOutCancel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border_textbox"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

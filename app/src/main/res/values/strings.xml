@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="google_maps_key" translatable="false">AIzaSyDtKbOmWuBI1kpD1oSolw6oJvGd31CUUuk</string>
+
+    <!-- <string name="app_name">OnlineReload</string> -->
+    <string name="app_name">EzeePay</string>
+    <!-- <string name="app_name">TMC</string> -->
+    <string name="action_help" translatable="false">Help</string>
+    <string name="action_auto_lock" translatable="false">Auto Lock ON/OFF</string>
+    <string name="action_change_password" translatable="false">Change Password</string>
+    <string name="action_change_language" translatable="false">Malay/English</string>
+    <string name="title_send" translatable="false">Send</string>
+    <string name="title_section1" translatable="false">TOP UP</string>
+    <string name="title_section2" translatable="false">PIN</string>
+    <string name="title_section3" translatable="false">PAYMENT</string>
+    <string name="title_section5" translatable="false">MY ACCOUNT</string>
+    <string name="title_whatshot" translatable="false">WHAT\'s HOT</string>
+    <string name="title_section4" translatable="false">SIGN UP</string>
+    <string name="title_section6" translatable="false">SETTING</string>
+    <string name="NA" translatable="false">NA</string>
+    <string name="RM5" translatable="false">RM 5</string>
+    <string name="RM10" translatable="false">RM 10</string>
+    <string name="RM20" translatable="false">RM 20</string>
+    <string name="RM30" translatable="false">RM 30</string>
+    <string name="RM40" translatable="false">RM 40</string>
+    <string name="RM50" translatable="false">RM 50</string>
+    <string name="RM60" translatable="false">RM 60</string>
+    <string name="RM70" translatable="false">RM 70</string>
+    <string name="RM80" translatable="false">RM 80</string>
+    <string name="RM100" translatable="false">RM 100</string>
+    <string name="lain_lain" translatable="false">Lain nilai \nOther denomination</string>
+    <string name="pilih_nilai_en" translatable="false">PLEASE SELECT VALUE</string>
+    <string name="pilih_nilai_my" translatable="false">SILA PILIH NILAI</string>
+    <string name="telefon_no" translatable="false">TELEPON BIL SILA MASUK TELEPON NO.\nUTILITI BIL SILA MASUK BIL ACCOUNT NO.\n\nTelephone No. / Bil No. :</string>
+    <string name="cust_telefon_no" translatable="false">Customer Mobile No./Account No. :</string>
+    <string name="title_ok" translatable="false">OK</string>
+    <string name="Print_1" translatable="false">Print(1)</string>
+    <string name="Print_5" translatable="false">Print(5)</string>
+    <string name="title_comfirm" translatable="false">Confirm</string>
+    <string name="resend_tac" translatable="false">Resend TAC</string>
+    <string name="title_cancel" translatable="false">Cancel</string>
+    <string name="title_closed" translatable="false">Close</string>
+    <string name="log_masuk" translatable="false">Login</string>
+    <string name="login" translatable="false">LOG IN</string>
+    <string name="not_connected" translatable="false">NOT Connected</string>
+    <string name="my_acc_check_bal" translatable="false">CHECK BALANCE</string>
+    <string name="my_acc_check_transaction" translatable="false">CHECK TX</string>
+    <string name="my_acc_check_DN" translatable="false">CHECK DN</string>
+    <string name="my_acc_report" translatable="false">REPORT</string>
+    <string name="my_acc_bank_in" translatable="false">BANK IN (BI)</string>
+    <string name="my_acc_bank_in_list" translatable="false">BI LIST</string>
+    <string name="my_acc_agent_info" translatable="false">AGENT INFO</string>
+    <string name="my_acc_DN" translatable="false">CHECK DN</string>
+    <string name="my_acc_topup_mobile_money" translatable="false">MOBILE MONEY TOPUP</string>
+    <string name="my_acc_update_fb_appid" translatable="false">UPDATE FB</string>
+    <string name="verify_acc" translatable="false">VERIFY ACCOUNT</string>
+    <string name="my_acc_printer" translatable="false">Printer Setting</string>
+    <string name="msg_check_customer_transcation_input" translatable="false">Customer Account No./Mobile No.</string>
+    <string name="msg_amount" translatable="false">Amount (e.g 1000)</string>
+    <string name="msg_mm_merchant_code" translatable="false">Merchant Code</string>
+    <string name="msg_mm_time" translatable="false">Masa (e.g 150920141344)</string>
+    <string name="msg_bank" translatable="false">Select Bank (e.g MBB)</string>
+    <string name="msg_gateway" translatable="false">Gateway Number</string>
+    <string name="msg_date" translatable="false">Date (e.g 2207)</string>
+    <string name="msg_time" translatable="false">Time (e.g 1830)</string>
+    <string name="send_to" translatable="false">Send To</string>
+    <string name="cust_acc_no" translatable="false">Customer Account</string>
+    <string name="mobile_no" translatable="false">Mobile No.</string>
+    <string name="DN" translatable="false">DN No.</string>
+    <string name="mobile_no_hint" translatable="false">01xxxxxxxx</string>
+    <string name="setting_help" translatable="false">HELP</string>
+    <string name="setting_share" translatable="false">SHARE</string>
+    <string name="setting_account_info" translatable="false">ACCOUNT INFO</string>
+    <string name="setting_update_app" translatable="false">UPDATE APP</string>
+    <string name="setting_select_printer" translatable="false">SELECT PRINTER</string>
+    <string name="setting_refresh_product" translatable="false">NEW PRODUCT</string>
+    <string name="setting_test_print" translatable="false">TEST PRINT</string>
+    <string name="setting_logout" translatable="false">LOGOUT</string>
+    <string name="setting_location" translatable="false">Loc Setting</string>
+    <string name="setting_permission" translatable="false">App Setting</string>
+    <string name="setting_verify_password" translatable="false">CHANGE PASSWORD</string>
+    <string name="setting_contact_no" translatable="false">+60166572577</string>
+    <string name="start_date" translatable="false">Start Date</string>
+    <string name="end_date" translatable="false">End Date</string>
+    <string name="OK" translatable="false">OK</string>
+    <string name="Date" translatable="false">Tarikh</string>
+    <string name="print" translatable="false">Print</string>
+    <string name="product" translatable="false">Product</string>
+    <string name="mobileNo" translatable="false">Mobile</string>
+    <string name="value" translatable="false">Value</string>
+    <string name="total_sales" translatable="false">Total Sales</string>
+    <string name="product_name" translatable="false">Product Name</string>
+    <string name="amount" translatable="false">Amount</string>
+    <string name="status" translatable="false">Sta</string>
+    <string name="code" translatable="false">Code</string>
+    <string name="SN" translatable="false">Serial Number</string>
+    <string name="PIN" translatable="false">PIN</string>
+    <string name="check_status" translatable="false">Check Status</string>
+    <string name="print_report" translatable="false">Print Report</string>
+    <string name="view" translatable="false">View</string>
+    <string name="ID" translatable="false">ID</string>
+    <string name="date_time" translatable="false">Date</string>
+    <string name="denomination" translatable="false">Denomination</string>
+    <string name="rebateRate" translatable="false">RebateRate</string>
+    <string name="rebateType" translatable="false">RebateType</string>
+    <string name="reprint" translatable="false">Print Receipt</string>
+    <string name="shareReceipt" translatable="false">Share Receipt</string>
+    <string name="skip" translatable="false">Skip</string>
+    <string name="back" translatable="false">Back</string>
+    <string name="deno" translatable="false">Deno</string>
+    <string name="rate" translatable="false">Rate</string>
+    <string name="type" translatable="false">Type</string>
+    <string name="login_hint" translatable="false">********</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="power_by" translatable="false">Powered By Touchpay Solution</string>
+    <string name="register" translatable="false">SAYA NAK DAFTAR</string>
+    <string name="register_un" translatable="false">Daftar/Register</string>
+    <string name="register_info" translatable="false">For more information, please do not hesitate to contact us at:\n\n+6016 657 2577.</string>
+    <string name="register_info_bm" translatable="false">Untuk maklumat lanjut, sila hubungi :</string>
+    <string name="sales_portal" translatable="false">Sales Portal</string>
+    <string name="admin_portal" translatable="false">Admin Portal</string>
+    <string name="system_portal" translatable="false">System Portal</string>
+    <string name="gps_network_not_enabled" translatable="false">GPS Not enabled</string>
+    <string name="open_location_settings" translatable="false">Open Location Setting</string>
+    <string name="select_state" translatable="false">Select State</string>
+    <string name="ex_rm" translatable="false">Ringgit Malaysia (RM)</string>
+
+    <string name="no_internet_connection" translatable="false">No Internet Connection</string>
+
+    <string name="qpay_tutor" translatable="false"><u>&gt;&gt; QPay99 Tutorial &lt;&lt;</u></string>
+    <string name="new_agent_web" translatable="false"><u>&gt;&gt;;&gt; New Agent Mobile Web</u></string>
+    <string name="facebook_app_id" translatable="false">103820703512586</string>
+    <string-array name="country_array">
+        <item>Johor</item>
+        <item>Kedah</item>
+        <item>Kelantan</item>
+        <item>Melaka</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Perak</item>
+        <item>Perlis</item>
+        <item>Pulau Pinang</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Selangor</item>
+        <item>Terengganu</item>
+                <item>WP Kuala Lumpur</item>
+        <item>WP Labuan</item>
+        <item>WP Putra Jaya</item>
+    </string-array>
+    <string name="title_activity_share_via_ui" translatable="false">Share Via</string>
+    <string name="SignIn" translatable="false">SIGN IN</string>
+    <string name="forgot_password" translatable="false">Forgot Password</string>
+    <string name="rememberPassword" translatable="false">Remember password</string>
+    <string name="buy_printer" translatable="false"><u>Buy Printer</u></string>
+
+
+    <string name="title_activity_buy_printer_ui" translatable="false">Buy Printer</string>
+    <string name="title_activity_main_v2" translatable="false">MainActivity_v2</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="section_format" translatable="false">Hello World from section: %1$d</string>
+    <string name="title_activity_main_v3" translatable="false">MainActivity_v3</string>
+    <string name="buy_now" translatable="false">Buy Now</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="tac_verification" translatable="false">TAC Verification</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="title_activity_main4" translatable="false">title_activity_main4</string>
+
+    <string name="title_topupint" translatable="false">TOPUP INT</string>
+
+    <string name="my_acc_share_credit" translatable="false">SHARE CREDIT</string>
+    <string name="instructions" translatable="false">Place your fingertip to verify your identity</string>
+    <string name="draw_1">- Prizes are not exchangeable</string>
+    <string name="draw_2">- Lucky draw start after 100 tickets are redeemed</string>
+    <string name="draw_3">- Maximum of 10 e-tickets for each member QPay99 to redeem</string>
+    <string name="draw_4">- The redeemed QPoints are non-refundable.</string>
+    <string name="Redeem_now">Redeem Now</string>
+    <string name="luckydraw">Lucky Draw</string>
+    <string name="title_activity_main5" translatable="false">Main5Activity</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="please_select">Please Select</string>
+    <string name="sendfeedback">Send Feedback</string>
+    <string name="qpoints_redemptions">QPoints Redemptions</string>
+    <string name="share_win">Shake and Win</string>
+    <string name="daily_bonus">Grab daily login QPoints</string>
+    <string name="nav_topup">TOPUP</string>
+    <string name="productInfo">Product Info</string>
+    <string name="commission">Commission</string>
+
+
+</resources>

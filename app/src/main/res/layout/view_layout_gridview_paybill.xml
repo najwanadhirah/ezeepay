@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/productDetail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <com.rt.qpay99.component.ScrollTextView
+            android:id="@+id/scrolltext"
+            android:visibility="gone"
+            style="@style/movingTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/rlgd1"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical" >
+
+                <GridView
+                    android:id="@+id/gdTopup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" >
+                </GridView>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7069957738539410/8983539706">
+        </com.google.android.gms.ads.AdView>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

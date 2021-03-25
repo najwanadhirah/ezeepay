@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:focusableInTouchMode="false"
+        android:text="1 - Nama"
+        android:textSize="8pt"
+        android:textColor="@color/solid_black"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:focusableInTouchMode="false"
+        android:text="2 - Nombor telefon"
+        android:textSize="8pt"
+        android:textColor="@color/solid_black"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/edContactNo"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        android:focusableInTouchMode="false"
+        android:text="3 - Alamat surat-menyurat"
+        android:textSize="8pt"
+        android:textColor="@color/solid_black"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/edAddress"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:lines="4"
+        android:minLines="3"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+</LinearLayout>

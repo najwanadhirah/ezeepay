@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/normalfont22Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Touchpay solution" />
+
+                <TextView
+                    style="@style/normalfont22Input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MBB	- 5541 2953 2508" />
+
+                <TextView
+                    style="@style/normalfont22Input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CIMB	- 8008 351 402" />
+
+                <TextView
+                    style="@style/normalfont18Red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="** BANK IN (BI) MESTI hantar dalam hari yang sama" />
+
+                <TextView
+                    style="@style/normalfont18Red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="** Monday - Sunday (10am - 9pm)" />
+
+                <TextView
+                    style="@style/normalfont18Red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="** Caj tambahan RM 1 untuk tambah modal kurang dari RM 300" />
+
+                <TextView
+                    style="@style/normalfont18Red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="** Minimum bank in RM300" />
+
+
+                <TextView
+                    style="@style/normalfont18Red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="** JOMPAY BILLER CODE 82073" />
+
+
+            </LinearLayout>
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:orientation="vertical" -->
+            <!-- android:padding="10dp" > -->
+
+
+            <!-- <TextView -->
+            <!-- style="@style/normalfont18Black" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="BERJAYA SALES &amp; MARKETING" /> -->
+
+
+            <!-- <TextView -->
+            <!-- style="@style/normalfont18Input" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="MBB	- 5628 3460 8836" /> -->
+
+
+            <!-- <TextView -->
+            <!-- style="@style/normalfont18Input" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="CIMB	- 8600 3080 55" /> -->
+            <!-- </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/normalfont18Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_bank" />
+
+                <Spinner
+                    android:id="@+id/spinnerBank"
+                    style="@style/normalfont18Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- <AutoCompleteTextView -->
+                <!-- android:id="@+id/acBankIn" -->
+                <!-- style="@style/normalfont18Input" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:hint="@string/msg_bank" > -->
+                <!-- </AutoCompleteTextView> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/normalfont18Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_amount" />
+
+                <EditText
+                    android:id="@+id/edBankInAmount"
+                    style="@style/normalfont18Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/msg_amount"
+                    android:inputType="phone" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/normalfont18Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recipient Refence (Online Bankin)" />
+
+                <EditText
+                    android:id="@+id/edBankInCode"
+                    style="@style/normalfont18Input"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:layout_height="match_parent"
+                    android:hint="Recipient Refence" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/normalfont18Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_date" />
+
+                <EditText
+                    android:id="@+id/edBankInDate"
+                    style="@style/normalfont18Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLength="4"
+                    android:hint="@string/msg_date" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/normalfont18Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_time" />
+
+                <EditText
+                    android:id="@+id/edBankInTime"
+                    style="@style/normalfont18Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:maxLength="4"
+
+                    android:hint="@string/msg_time" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

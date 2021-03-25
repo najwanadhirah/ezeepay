@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    >
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:text="-700"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/solid_red"
+        >
+    </TextView>
+
+
+
+    <TextView
+        android:id="@+id/tvRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfer to agentid 568 via Web"
+        android:layout_below="@+id/tvAmount"
+        android:textColor="@color/solid_black"
+        >
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tvNewBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1538.195"
+        android:layout_below="@id/tvRemark"
+
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvCreatedTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1/1/2017 9:08:33 AM"
+        android:layout_below="@id/tvNewBalance"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tvCreatedTS"
+        android:layout_height="wrap_content"
+        android:text="TRANSFERRED"
+        android:textSize="12dp"
+
+        />
+
+
+
+
+
+
+</RelativeLayout>

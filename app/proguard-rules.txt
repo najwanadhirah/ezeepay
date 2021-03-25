@@ -1,0 +1,203 @@
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+
+# Optimization is turned off by default. Dex does not like code run
+# through the ProGuard optimize and preverify steps (and performs some
+# of these optimizations on its own).
+#-dontoptimize
+#-dontpreverify
+
+# If you want to enable optimization, you should include the
+# following:
+-optimizations !code/simplification/arithmetic,!code/simplification/cast,!field/*,!class/merging/*
+-optimizationpasses 5
+-allowaccessmodification
+#
+# Note that you cannot just include these flags in your own
+# configuration file; if you are including this file, optimization
+# will be turned off. You'll need to either edit this file, or
+# duplicate the contents of this file and remove the include of this
+# file from your project's proguard.config path property.
+-keep public class * extends android.support.v7.app
+-keep public class * extends android.support.v7.widget
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgent
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.app.Fragment
+-keep public class * extends android.support.v4.app.DialogFragment
+-keep public class * extends com.actionbarsherlock.app.SherlockListFragment
+-keep public class * extends com.actionbarsherlock.app.SherlockFragment
+-keep public class * extends com.actionbarsherlock.app.SherlockFragmentActivity
+-keep public class * extends android.app.Fragment
+-keep public class com.android.vending.licensing.ILicensingService
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames class * {
+ native <methods>;
+}
+
+-keep public class * extends android.view.View {
+ public <init>(android.content.Context);
+ public <init>(android.content.Context, android.util.AttributeSet);
+ public <init>(android.content.Context, android.util.AttributeSet, int);
+ public void set*(...);
+}
+
+-keepclasseswithmembers class * {
+ public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+ public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * extends android.app.Activity {
+ public void *(android.view.View);
+}
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum * {
+ public static **[] values();
+ public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+ public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class **.R$* {
+ public static <fields>;
+}
+
+ -keep class com.google.android.gms.** { *; }
+ -keep class android.support.v7.widget.RoundRectDrawable { *; }
+ -dontwarn com.google.android.gms.**
+
+
+-keep class com.android.support.** { *; }
+-keep class com.google.firebase.** { *; }
+-keep class android.support.v4.app.** { *; }
+-keep interface android.support.v4.app.** { *; }
+-keep class com.actionbarsherlock.** { *; }
+-keep interface com.actionbarsherlock.** { *; }
+-keep class com.synnapps.carouselview.** { *; }
+-dontwarn com.google.firebase.**
+# The support library contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version. We know about them, and they are safe.
+-dontwarn android.support.**
+-dontwarn com.google.ads.**
+-dontwarn org.xmlpull.v1.**
+
+-dontwarn android.databinding.**
+-keep class android.databinding.** { *; }
+
+# support-v7
+-dontwarn android.support.v7.**
+-keep class android.support.v7.** { *; }
+-keep interface android.support.v7.** { *; }
+-keep class android.support.v7.app.** { *; }
+-keep interface android.support.v7.app.** { *; }
+-keep class android.support.v7.** { *; }
+
+-optimizationpasses 5
+-keepattributes SourceFile,LineNumberTable
+-renamesourcefileattribute ''
+-keep class !android.support.v7.internal.view.menu.**,android.support.v7.** {*;}
+-dontobfuscate
+
+-keep class org.apache.http.** { *; }
+-dontwarn org.apache.http.**
+-dontwarn android.net.**
+
+-dontwarn com.squareup.okhttp.**
+-dontnote android.net.http.*
+-dontnote org.apache.commons.codec.**
+-dontnote org.apache.http.**
+
+
+-keepattributes Signature,RuntimeVisibleAnnotations,AnnotationDefault
+
+-keepclassmembers class * {
+  @com.google.api.client.util.Key <fields>;
+}
+
+# Needed by google-http-client-android when linking against an older platform version
+
+-dontwarn com.google.api.client.extensions.android.**
+
+# Needed by google-api-client-android when linking against an older platform version
+
+-dontwarn com.google.api.client.googleapis.extensions.android.**
+
+# Needed by google-play-services when linking against an older platform version
+
+-dontwarn com.google.android.gms.**
+
+# commons codec/logging use a lot of reflection don't warn
+-dontwarn org.apache.commons.codec.binary.Base64
+-dontwarn org.apache.commons.codec.binary.Hex
+-dontwarn org.apache.commons.logging.impl.ServletContextCleaner
+-dontwarn org.apache.commons.logging.impl.LogKitLogger
+-dontwarn org.apache.commons.logging.impl.AvalonLogger
+-dontwarn org.apache.commons.logging.impl.Log4JLogger
+-dontnote org.apache.commons.logging.Log
+-dontnote org.apache.commons.logging.LogSource
+-dontnote org.apache.commons.logging.impl.Log4JLogger
+-dontnote org.apache.james.mime4j.message.storage.TempStorage
+
+
+
+# Add this global rule
+-keepattributes Signature
+
+# This rule will properly ProGuard all the model classes in
+# the package com.yourcompany.models. Modify to fit the structure
+# of your app.
+-keepclassmembers class com.rt.qpay99.object.** {
+  *;
+  }
+
+  -keep class com.google.android.gms.** { *; }
+  -dontwarn com.google.android.gms.**
+  -keep public class com.google.android.gms.* { public *; }
+  -dontwarn com.google.android.gms.**
+
+  -keep public class * implements com.bumptech.glide.module.GlideModule
+  -keep public class * extends com.bumptech.glide.module.AppGlideModule
+  -keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
+    **[] $VALUES;
+    public *;
+  }
+
+-keep public class * extends com.bumptech.glide.module.AppGlideModule
+-keep class com.bumptech.glide.GeneratedAppGlideModuleImpl
+
+
+  -keep class * extends java.util.ListResourceBundle {
+      protected Object[][] getContents();
+  }
+
+  -keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+      public static final *** NULL;
+  }
+
+  -keepnames @com.google.android.gms.common.annotation.KeepName class *
+  -keepclassmembernames class * {
+      @com.google.android.gms.common.annotation.KeepName *;
+  }
+
+  -keepnames class * implements android.os.Parcelable {
+      public static final ** CREATOR;
+  }
+
+  -keep class org.opencv.** { *; }
+  -keep class com.itextpdf.** { *; }
+  -dontwarn com.itextpdf.**

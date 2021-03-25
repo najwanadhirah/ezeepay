@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_bar_height"
+    android:background="@color/solid_black"
+    android:paddingLeft="2sp"
+    android:paddingRight="2sp" >
+
+    <Button
+        android:id="@+id/nav_btn_left"
+        style="@style/navigationButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@color/solid_black"
+        android:maxLines="1"
+        android:minWidth="40sp"
+        android:textColor="@color/orange" >
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/nav_text"
+            style="@style/navigationBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:shadowColor="@color/solid_black"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@color/orange" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nav_btn_right"
+        style="@style/navigationButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@color/transparent"
+        android:text="@string/back"
+        android:textColor="@color/orange" >
+    </Button>
+
+</RelativeLayout>

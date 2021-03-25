@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:clickable="false"
+        android:gravity="left"
+        android:paddingTop="5dp"
+        android:text="@string/pilih_nilai_my"
+        android:textColor="@color/solid_black"
+        android:textSize="12sp"></TextView>
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:clickable="false"-->
+    <!--android:gravity="left"-->
+    <!--android:text="@string/pilih_nilai_en"-->
+    <!--android:textColor="@color/solid_black"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="italic" >-->
+    <!--</TextView>-->
+
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:listSelector="#00000000"
+        android:numColumns="auto_fit"
+        android:padding="3dp"
+        android:verticalSpacing="5dp"></GridView>
+
+
+    <LinearLayout
+        android:id="@+id/tblrLain"
+        style="@style/priceTAG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/linear_layout_border"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvlain_lain"
+            style="@style/priceTAGfont"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/lain_lain"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nav_btn_left"
+        style="@style/navigationButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="100dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/left_grey"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:visibility="invisible"></Button>
+
+</LinearLayout>
