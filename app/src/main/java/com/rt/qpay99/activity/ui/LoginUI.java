@@ -120,6 +120,7 @@ public class LoginUI extends FragmentActivity {
     private List<ProductInfo> datas = new ArrayList<ProductInfo>();
     private List<ProductInfo> QPromoList = new ArrayList<ProductInfo>();
     private CheckBox saveLoginCheckBox;
+    TextView tvForgotPassword, tvCareline;
     //UI VIEWS BIOMETRIC
     private TextView idTouch;
     private TextView TouchText;
@@ -166,6 +167,27 @@ public class LoginUI extends FragmentActivity {
             }
 
         });
+
+        tvForgotPassword = findViewById(R.id.tvForgotPassword);
+        tvForgotPassword.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(mContext, ForgotPasswordUI.class));
+//                WhatsappMSISDN = SharedPreferenceUtil.getCarelineNumber().replace("+", "");
+//                if(TextUtils.isEmpty(WhatsappMSISDN))return;
+//                if (WhatsappMSISDN.substring(0, 2).equalsIgnoreCase("60")) {
+//                    WhatsappMSISDN = WhatsappMSISDN.substring(1, WhatsappMSISDN.length());
+//                }
+//
+//                String s = "https://api.whatsapp.com/send?phone=6" + WhatsappMSISDN + "&text=FORGETPASSWORD";
+//                if(SharedPreferenceUtil.getServerKey().toUpperCase()=="QPAY99"){
+//                    s = "https://wa.me/60106572577?text=LUPAPASSWORD";
+//                }
+//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(s));
+//                startActivity(browserIntent);
+            }
+        });
+
 
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new OnClickListener() {
@@ -849,12 +871,25 @@ public class LoginUI extends FragmentActivity {
 
             @Override
             protected Boolean doInBackground(Void... arg0) {
+//                sTAC = tac;
+//                //sDeviceID = FunctionUtil.getDeviceIdOrAndroidId(mContext);
+//                DLog.e(TAG, "sDeviceID " + sDeviceID);
+//                SharedPreferenceUtil.editsDeviceID(sDeviceID);
+//                return rtWS.DeviceVerifyTAC(sClientUserName, sClientPassword,
+//                        sDeviceID, sClientID, sTAC);
+
                 sTAC = tac;
+                String sTs = FunctionUtil.getsDNReceivedID();
+                //msisdn = "60166572577";
+                String sEncKey = FunctionUtil.getsEncK(sClientUserName + "RichTech6318" + sTs);
                 //sDeviceID = FunctionUtil.getDeviceIdOrAndroidId(mContext);
                 DLog.e(TAG, "sDeviceID " + sDeviceID);
                 SharedPreferenceUtil.editsDeviceID(sDeviceID);
+//                return rtWS.DeviceVerifyTAC(sClientUserName, sClientPassword,
+//                        sDeviceID, sClientID, sTAC);
+
                 return rtWS.DeviceVerifyTAC(sClientUserName, sClientPassword,
-                        sDeviceID, sClientID, sTAC);
+                        sDeviceID, sClientID, sTAC,sTs,sEncKey);
 
             }
 

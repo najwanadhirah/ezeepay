@@ -230,6 +230,13 @@
             android:label="Report List"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".activity.ui.CustomerTopupTxReportUI" />
+
+        <activity android:name=".activity.ui.ForgotPasswordUI"
+          android:windowSoftInputMode="stateHidden"
+         />
+        <activity
+            android:name=".activity.ui.OTPUI"
+            android:parentActivityName=".activity.ui.LoginUI" />
         <activity
             android:name=".activity.ui.BuyPrinterUI"
             android:label="@string/title_activity_buy_printer_ui"

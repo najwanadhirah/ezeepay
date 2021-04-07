@@ -6,6 +6,7 @@ package com.rt.qpay99;
 
 public class Constants {
     public static final String ERR ="ERROR";
+    public static final int GPS_REQUEST = 10001;
 
     public static final String REPORT_Sales ="Sales Report";
     public static final String REPORT_Transferred = "Credit Transferred Report";
@@ -44,6 +45,8 @@ public class Constants {
     public static final String CAT_PHONE = "PHONE";
     public static final String CAT_POWERBANK = "POWERBANK";
     public static final String CAT_PRINTER = "PRINTER";
+
+    public static final String CAT_FORGOTPASSWORD = "FORGOTPASSWORD";
 
     public static final int GCM_PUSH = 8001;
 }

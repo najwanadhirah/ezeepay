@@ -3,8 +3,10 @@ package com.rt.qpay99.activity.ui;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ProgressBar;
 import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,15 +24,40 @@ public abstract class SRSBaseActivity extends AppCompatActivity {
     public Bundle extras;
     public String mName;
     public ProgressDialog pd;
+    ProgressBar pBar;
+    ViewFlipper mViewFlipper;
+    String mCategory = "";
+    public String sTs,sEncKey;
 
     public AlertDialog dialog;
     public AlertDialog.Builder builder;
+
+//    public void setDialog(String title,String msg,boolean Cancelable){
+//        builder = new AlertDialog.Builder(mContext);
+//        builder.setTitle(title);
+//        builder.setMessage(msg);
+//        builder.setPositiveButton("OK",null);
+//        builder.setCancelable(Cancelable);
+//        dialog = builder.create();
+//        dialog.show();
+//    }
 
     public void setDialog(String title,String msg,boolean Cancelable){
         builder = new AlertDialog.Builder(mContext);
         builder.setTitle(title);
         builder.setMessage(msg);
         builder.setPositiveButton("OK",null);
+        builder.setCancelable(Cancelable);
+        dialog = builder.create();
+        dialog.show();
+    }
+
+    public void setDialog(String title, String msg, boolean Cancelable, String buttonOk, String buttonCancel, DialogInterface.OnClickListener clickListener){
+        builder = new AlertDialog.Builder(mContext);
+        builder.setTitle(title);
+        builder.setMessage(msg);
+        builder.setPositiveButton(buttonOk,clickListener);
+        builder.setNegativeButton(buttonCancel, null);
         builder.setCancelable(Cancelable);
         dialog = builder.create();
         dialog.show();

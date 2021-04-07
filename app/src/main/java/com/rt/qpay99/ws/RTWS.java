@@ -32,6 +32,111 @@ public class RTWS {
 
     private String TAG = this.getClass().getName();
 
+    public RTResponse ForgotPasswordUpdatePassword(String sClientUserName,
+                                                   String sCustomerMobile, String sNewPassword, String sCustomerID,String sTS, String sEncKey, String sResponseMsg) {
+        RTCallWS cs = new RTCallWS();
+        RTResponse result = new RTResponse();
+        DLog.e(TAG, "sClientUserName " + sClientUserName);
+        DLog.e(TAG, "sCustomerMobile " + sCustomerMobile);
+        DLog.e(TAG, "sNewPassword " + sNewPassword);
+        DLog.e(TAG, "sCustomerID " + sCustomerID);
+        DLog.e(TAG, "sTS " + sTS);
+        DLog.e(TAG, "sEncKey " + sEncKey);
+        DLog.e(TAG, "sNewPassword " + sResponseMsg);
+
+        try {
+            RTSoap response = cs.ForgotPasswordUpdatePassword(sClientUserName, sCustomerMobile,
+                    sNewPassword,sCustomerID,sTS,sEncKey,sResponseMsg);
+            if (response != null) {
+                if (response.getProperties() != null) {
+                    for (RTSoapProperty element : response.getProperties()) {
+                        if ("ForgotPasswordUpdatePasswordResult".equalsIgnoreCase(element
+                                .getName()))
+                            result.setResultBoolean(element.getBooleanValue());
+                        if ("sResponseMsg".equalsIgnoreCase(element
+                                .getName()))
+                            result.setsResponseMessage(element.getValue());
+                    }
+                }
+            }
+        } catch (Exception e) {
+            DLog.e(TAG, "" + e.getMessage());
+        }
+
+        return result;
+
+    }
+
+    public RTResponse ForgotPasswordSendTac(String sClientUserName,String sCustomerMobile , String sTS, String sEncKey, String sClientID,String sDeviceID) {
+
+        RTCallWS cs = new RTCallWS();
+        RTResponse result = new RTResponse();
+
+        DLog.e(TAG, "sClientUserName " + sClientUserName);
+        DLog.e(TAG, "sCustomerMobile " + sCustomerMobile );
+        DLog.e(TAG, "sClientID " + sClientID);
+        DLog.e(TAG, "sTS " + sTS);
+        DLog.e(TAG, "sEncKey " + sEncKey);
+        DLog.e(TAG, "sDeviceID " + sDeviceID);
+
+
+        try {
+            RTSoap response = cs.ForgotPasswordSendTac(sClientUserName, sCustomerMobile ,sTS,sEncKey,sClientID,sDeviceID);
+            if (response != null) {
+                if (response.getProperties() != null) {
+                    for (RTSoapProperty element : response.getProperties()) {
+                        if ("ForgotPasswordSendTacResult".equalsIgnoreCase(element
+                                .getName()))
+                            result.setResultBoolean(element.getBooleanValue());
+                        if ("sClientID".equalsIgnoreCase(element
+                                .getName()))
+                            result.setsResponseMessage(element.getValue());
+                    }
+                }
+            }
+        } catch (Exception e) {
+            DLog.e(TAG, "" + e.getMessage());
+        }
+
+        return result;
+
+    }
+
+//    public RTResponse ForgotPasswordSendTac(String sClientUserName,String sCustomerMobile , String sTS, String sEncKey, String sClientID,String sDeviceID) {
+//
+//        RTCallWS cs = new RTCallWS();
+//        RTResponse result = new RTResponse();
+//
+//        DLog.e(TAG, "sClientUserName " + sClientUserName);
+//        DLog.e(TAG, "sCustomerMobile " + sCustomerMobile );
+//        DLog.e(TAG, "sClientID " + sClientID);
+//        DLog.e(TAG, "sTS " + sTS);
+//        DLog.e(TAG, "sEncKey " + sEncKey);
+//        DLog.e(TAG, "sDeviceID " + sDeviceID);
+//
+//
+//        try {
+//            RTSoap response = cs.ForgotPasswordSendTac(sClientUserName, sCustomerMobile ,sTS,sEncKey,sClientID,sDeviceID);
+//            if (response != null) {
+//                if (response.getProperties() != null) {
+//                    for (RTSoapProperty element : response.getProperties()) {
+//                        if ("ForgotPasswordSendTacResult".equalsIgnoreCase(element
+//                                .getName()))
+//                            result.setResultBoolean(element.getBooleanValue());
+//                        if ("sClientID".equalsIgnoreCase(element
+//                                .getName()))
+//                            result.setsResponseMessage(element.getValue());
+//                    }
+//                }
+//            }
+//        } catch (Exception e) {
+//            DLog.e(TAG, "" + e.getMessage());
+//        }
+//
+//        return result;
+//
+//    }
+
     public RequestInputResponse RequestBuy(String sCustomerAccountNumber,
                                            String sCustomerMobileNumber, String dProductPrice,
                                            String sProductName, String sRemark, String sClientTxID,
@@ -528,16 +633,17 @@ public class RTWS {
     }
 
     public boolean DeviceVerifyTAC(String sClientUserName,
-                                   String sClientPassword, String sDeviceID, int sClientID, String sTAC) {
+                                   String sClientPassword, String sDeviceID, int sClientID, String sTAC, String sTS, String sEncKey) {
         RTCallWS cs = new RTCallWS();
         DLog.e(TAG, "sClientUserName " + sClientUserName);
         DLog.e(TAG, "sClientPassword " + sClientPassword);
         DLog.e(TAG, "sDeviceID " + sDeviceID);
         DLog.e(TAG, "sClientID " + sClientID);
         DLog.e(TAG, "sTAC " + sTAC);
+        DLog.e(TAG, "sTAC " + sTAC);
         try {
             RTSoap response = cs.DeviceVerifyTAC(sClientUserName,
-                    sClientPassword, sClientID, sDeviceID, sTAC);
+                    sClientPassword, sClientID, sDeviceID, sTAC,sTS,sEncKey);
             if (response != null) {
                 if (response.getProperties() != null) {
                     for (RTSoapProperty element : response.getProperties()) {
@@ -554,6 +660,34 @@ public class RTWS {
         return false;
 
     }
+
+//    public boolean DeviceVerifyTAC(String sClientUserName,
+//                                   String sClientPassword, String sDeviceID, int sClientID, String sTAC) {
+//        RTCallWS cs = new RTCallWS();
+//        DLog.e(TAG, "sClientUserName " + sClientUserName);
+//        DLog.e(TAG, "sClientPassword " + sClientPassword);
+//        DLog.e(TAG, "sDeviceID " + sDeviceID);
+//        DLog.e(TAG, "sClientID " + sClientID);
+//        DLog.e(TAG, "sTAC " + sTAC);
+//        try {
+//            RTSoap response = cs.DeviceVerifyTAC(sClientUserName,
+//                    sClientPassword, sClientID, sDeviceID, sTAC);
+//            if (response != null) {
+//                if (response.getProperties() != null) {
+//                    for (RTSoapProperty element : response.getProperties()) {
+//                        DLog.e(TAG, "" + element.getBooleanValue());
+//                        return element.getBooleanValue();
+//                    }
+//                }
+//            }
+//        } catch (Exception e) {
+//            DLog.e(TAG, "" + e.getMessage());
+//            return false;
+//        }
+//
+//        return false;
+//
+//    }
 
     public boolean UpdatePushNotificationID(String sClientUserName,
                                             String sClientPassword, String sPNID) {

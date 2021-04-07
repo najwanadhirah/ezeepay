@@ -55,6 +55,7 @@ public class TACUI extends BasePermissionAppCompatActivity {
     private String TAG = this.getClass().getName();
     private Context mContext;
     private IntentFilter mIntentFilter;
+    private String sClientUserName, sClientPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,8 +153,15 @@ public class TACUI extends BasePermissionAppCompatActivity {
                 sDeviceID = FunctionUtil.getDeviceIdOrAndroidId(mContext);
                 DLog.e(TAG, "sDeviceID " + sDeviceID);
                 SharedPreferenceUtil.editsDeviceID(sDeviceID);
-                return rtWS.DeviceVerifyTAC(SharedPreferenceUtil.getsClientUserName(), SharedPreferenceUtil.getsClientPassword(),
-                        sDeviceID, Config.sClientID, sTAC);
+
+//                return rtWS.DeviceVerifyTAC(SharedPreferenceUtil.getsClientUserName(), SharedPreferenceUtil.getsClientPassword(),
+//                        sDeviceID, Config.sClientID, sTAC);
+                String sTs = FunctionUtil.getsDNReceivedID();
+                //msisdn = "60166572577";
+//                String sEncKey = FunctionUtil.getsEncK(SharedPreferenceUtil.getsClientUserName(),+ "RichTech6318" + sTs);
+                String sEncKey = FunctionUtil.getsEncK(sClientUserName + "RichTech6318" + sTs);
+                return rtWS.DeviceVerifyTAC(SharedPreferenceUtil.getsClientUserName(),  SharedPreferenceUtil.getsClientPassword(),
+                        sDeviceID,  Config.sClientID, sTAC,sTs,sEncKey);
 
             }
 

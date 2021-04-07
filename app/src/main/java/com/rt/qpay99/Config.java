@@ -18,6 +18,8 @@ public class Config {
     public static double Longitude=0;
 
     public static String AZUREMAIN_URL = "https://onlinereload.azurewebsites.net/";
+
+    //public static String AZUREMAIN_URL = "http://121.121.33.37/AzureOnlineReloadAPI/";
     public static String AGENT_URL = "api/Agent";
     public static String LoginHistory_URL = "api/LoginHistory";
 

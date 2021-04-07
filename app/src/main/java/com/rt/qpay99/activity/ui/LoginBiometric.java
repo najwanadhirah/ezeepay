@@ -820,11 +820,17 @@ public class LoginBiometric  extends FragmentActivity {
             @Override
             protected Boolean doInBackground(Void... arg0) {
                 sTAC = tac;
+                String sTs = FunctionUtil.getsDNReceivedID();
+                //msisdn = "60166572577";
+                String sEncKey = FunctionUtil.getsEncK(sClientUserName + "RichTech6318" + sTs);
                 //sDeviceID = FunctionUtil.getDeviceIdOrAndroidId(mContext);
                 DLog.e(TAG, "sDeviceID " + sDeviceID);
                 SharedPreferenceUtil.editsDeviceID(sDeviceID);
+//                return rtWS.DeviceVerifyTAC(sClientUserName, sClientPassword,
+//                        sDeviceID, sClientID, sTAC);
+
                 return rtWS.DeviceVerifyTAC(sClientUserName, sClientPassword,
-                        sDeviceID, sClientID, sTAC);
+                        sDeviceID, sClientID, sTAC,sTs,sEncKey);
 
             }
 

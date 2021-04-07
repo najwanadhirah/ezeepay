@@ -132,7 +132,7 @@ public class SRSApp extends Application {
 //		if(!Config.isDebug){
 //			startService(new Intent(this, GCMService.class));
 //		}
-		startService(new Intent(this, GCMService.class));
+	//	startService(new Intent(this, GCMService.class));
 //		FirebaseApp.initializeApp(mContext);
 		try {
 			mPackageInfo = mContext.getPackageManager().getPackageInfo(

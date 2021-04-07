@@ -33,7 +33,7 @@ android {
 
     defaultConfig {
         applicationId "rob.payezqp.com"
-        minSdkVersion 22
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 100
         versionName "1.0.100"
@@ -107,6 +107,9 @@ dependencies {
     implementation 'androidx.vectordrawable:vectordrawable-animated:1.1.0'
     implementation 'com.google.android.material:material:1.2.0'
 
+    implementation 'com.google.android.gms:play-services-safetynet:17.0.0'
+    implementation 'com.android.volley:volley:1.1.1'
+
 
 
 
@@ -127,6 +130,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:17.0.0'
     implementation 'com.google.android.gms:play-services-ads:19.3.0'
     implementation 'com.synnapps:carouselview:0.1.4'
+    implementation 'com.poovam:pin-edittext-field:1.1.2'
 
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.stepstone.stepper:material-stepper:4.3.1'

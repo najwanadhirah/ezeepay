@@ -5,6 +5,7 @@
 
     <!-- <string name="app_name">OnlineReload</string> -->
     <string name="app_name">EzeePay</string>
+    <string name="server_key">Server</string>
     <!-- <string name="app_name">TMC</string> -->
     <string name="action_help" translatable="false">Help</string>
     <string name="action_auto_lock" translatable="false">Auto Lock ON/OFF</string>

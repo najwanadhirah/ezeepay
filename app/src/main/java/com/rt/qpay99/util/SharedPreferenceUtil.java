@@ -66,10 +66,24 @@ public class SharedPreferenceUtil {
 	private  static final String SAVE_ID_TOUCH_NAME = "IdTouchName";
 	private static final String SAVE_ID_TOUCH_PASSWORD = "IdTouchPassword";
 
+	private static final String SERVER_NAME = "serverName";
 
 	private static final String PROFILE_PIC_LOC = "profilePic";
 	private static final String CUST_ADDRESS_LIST_PREFERENCE = "CustAddressList";
 	private static final String LOGIN_STATUS = "LoginStatus";
+
+	private static final String LOCATION_COORDINATE = "LocationCoordinate";
+
+
+	public static String getLocationCoordinate() {
+		return setting != null ? setting.getString(LOCATION_COORDINATE, "") : "";
+	}
+
+	public static void editLocationCoordinate(String LocationCoordinate) {
+		editor.putString(LOCATION_COORDINATE, LocationCoordinate);
+		editor.commit();
+	}
+
 
 
 	public static String getLoginStatus() {
@@ -505,6 +519,15 @@ public class SharedPreferenceUtil {
 
 	public static void editBioPassword(String IdTouchPassword) {
 		editor.putString(SAVE_ID_TOUCH_PASSWORD, IdTouchPassword);
+		editor.commit();
+	}
+
+	public static String getServerName() {
+		return setting != null ? setting.getString(SERVER_NAME, "SERVER") : "SERVER";
+	}
+
+	public static void editServerName(String serverName) {
+		editor.putString(SERVER_NAME, serverName);
 		editor.commit();
 	}
 

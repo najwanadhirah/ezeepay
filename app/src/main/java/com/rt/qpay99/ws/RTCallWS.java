@@ -65,6 +65,9 @@ public class RTCallWS {
 	private String METHOD_QueryAccount = "QueryAccount";
 	private String METHOD_RequestBuy = "RequestBuy";
 
+	private String METHOD_ForgotPasswordSendTac = "ForgotPasswordSendTac";
+	private String METHOD_ForgotPasswordUpdatePassword = "ForgotPasswordUpdatePassword";
+	private String METHOD_UpdateMemberLocation = "UpdateMemberLocation";
 
 	public RTSoap RequestBuy(RequestInput r) {
 		RTSoap result = null;
@@ -1811,5 +1814,161 @@ public class RTCallWS {
 			element.setName(pi.getName());
 			element.setValue(obj.toString());
 		}
+	}
+
+	public RTSoap ForgotPasswordUpdatePassword(String sClientUserName,
+											   String sCustomerMobile, String sNewPassword, String sCustomerID,String sTS,
+											   String sEncKey, String sResponseMsg){
+		RTSoap result = null;
+
+		SoapObject soapObject = new SoapObject(WS_NAMESPACE,
+				METHOD_ForgotPasswordUpdatePassword);
+
+		soapObject.addProperty("sClientUserName", sClientUserName);
+		soapObject.addProperty("sCustomerMobile", sCustomerMobile);
+		soapObject.addProperty("sNewPassword", sNewPassword);
+		soapObject.addProperty("sCustomerID", sCustomerID);
+		soapObject.addProperty("sTS", sTS);
+		soapObject.addProperty("sEncKey", sEncKey);
+		soapObject.addProperty("sResponseMsg", sResponseMsg);
+
+
+		SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(
+				SoapEnvelope.VER10);
+		envelope.dotNet = true;
+		envelope.setOutputSoapObject(soapObject);
+		envelope.bodyOut = soapObject;
+		DLog.e(TAG, "envelope.bodyOut " + envelope.bodyOut);
+		CustomAndroidHttpTransport httpTranstation = new CustomAndroidHttpTransport(WS_URL);
+		try {
+			httpTranstation
+					.call(WS_NAMESPACE + METHOD_ForgotPasswordUpdatePassword, envelope);
+
+			Object tmpResponse = envelope.bodyIn;
+			if (tmpResponse instanceof SoapObject) {
+				SoapObject resultRpc = (SoapObject) tmpResponse;
+				result = new RTSoap();
+				for (int i = 0; i < resultRpc.getPropertyCount(); i++) {
+					PropertyInfo pi = new PropertyInfo();
+					resultRpc.getPropertyInfo(i, pi);
+
+					RTSoapProperty subElement = new RTSoapProperty();
+					convert2RTSoap(resultRpc.getProperty(i), pi, subElement);
+					result.addProperty(subElement);
+				}
+			}
+
+			DLog.i("ForgotPasswordUpdatePassword", "true:" + result.toString());
+		} catch (Exception e) {
+			DLog.i("ForgotPasswordUpdatePassword", "fasle:" + e.getMessage());
+			e.printStackTrace();
+			return null;
+		}
+		return result;
+
+	}
+
+	public RTSoap ForgotPasswordSendTac(String sClientUserName,String sCustomerMobile , String sTS, String sEncKey, String sClientID, String sDeviceID) {
+
+		RTSoap result = null;
+
+		SoapObject soapObject = new SoapObject(WS_NAMESPACE,
+				METHOD_ForgotPasswordSendTac);
+
+		soapObject.addProperty("sClientUserName", sClientUserName);
+		soapObject.addProperty("sCustomerMobile ", sCustomerMobile );
+		soapObject.addProperty("sClientID", sClientID);
+		soapObject.addProperty("sTS", sTS);
+		soapObject.addProperty("sEncKey", sEncKey );
+		soapObject.addProperty("sDeviceID", sDeviceID );
+
+		SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(
+				SoapEnvelope.VER10);
+		envelope.dotNet = true;
+		envelope.setOutputSoapObject(soapObject);
+		envelope.bodyOut = soapObject;
+		DLog.e(TAG, "envelope.bodyOut " + envelope.bodyOut);
+		CustomAndroidHttpTransport httpTranstation = new CustomAndroidHttpTransport(WS_URL);
+		try {
+			httpTranstation
+					.call(WS_NAMESPACE + METHOD_ForgotPasswordSendTac, envelope);
+
+			Object tmpResponse = envelope.bodyIn;
+			if (tmpResponse instanceof SoapObject) {
+				SoapObject resultRpc = (SoapObject) tmpResponse;
+				result = new RTSoap();
+				for (int i = 0; i < resultRpc.getPropertyCount(); i++) {
+					PropertyInfo pi = new PropertyInfo();
+					resultRpc.getPropertyInfo(i, pi);
+					RTSoapProperty subElement = new RTSoapProperty();
+					convert2RTSoap(resultRpc.getProperty(i), pi, subElement);
+					result.addProperty(subElement);
+				}
+			}
+
+			DLog.i("ForgotPasswordSendTac", "true:" + result.toString());
+		} catch (Exception e) {
+			DLog.i("ForgotPasswordSendTac", "Err :" + e.getMessage());
+			e.printStackTrace();
+			return null;
+		}
+		return result;
+
+	}
+
+	public RTSoap DeviceVerifyTAC(String sClientUserName,
+								  String sClientPassword, int sClientID, String sDeviceID, String sTAC, String sTS, String sEncKey) {
+
+		RTSoap result = null;
+
+		SoapObject soapObject = new SoapObject(WS_NAMESPACE,
+				METHOD_DeviceVerifyTAC);
+
+		soapObject.addProperty("sClientUserName", sClientUserName);
+		soapObject.addProperty("sClientPassword", sClientPassword);
+		soapObject.addProperty("sTS", sTS);
+		soapObject.addProperty("sEncKey", sEncKey);
+
+
+		if (FunctionUtil.isSet(sDeviceID))
+			soapObject.addProperty("sDeviceID", sDeviceID);
+
+		soapObject.addProperty("sClientID", sClientID);
+
+		if (FunctionUtil.isSet(sTAC))
+			soapObject.addProperty("sTAC", sTAC);
+
+		SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(
+				SoapEnvelope.VER11);
+		envelope.dotNet = true;
+		envelope.setOutputSoapObject(soapObject);
+		envelope.bodyOut = soapObject;
+		DLog.i(TAG,"" + WS_URL);
+		CustomAndroidHttpTransport httpTranstation = new CustomAndroidHttpTransport(WS_URL);
+		try {
+			httpTranstation.call(WS_NAMESPACE + METHOD_DeviceVerifyTAC,
+					envelope);
+
+			Object tmpResponse = envelope.bodyIn;
+			if (tmpResponse instanceof SoapObject) {
+				SoapObject resultRpc = (SoapObject) tmpResponse;
+				result = new RTSoap();
+				for (int i = 0; i < resultRpc.getPropertyCount(); i++) {
+					PropertyInfo pi = new PropertyInfo();
+					resultRpc.getPropertyInfo(i, pi);
+
+					RTSoapProperty subElement = new RTSoapProperty();
+					convert2RTSoap(resultRpc.getProperty(i), pi, subElement);
+					result.addProperty(subElement);
+				}
+			}
+
+			DLog.i("DeviceLogin", "true:" + result.toString());
+		} catch (Exception e) {
+			DLog.i("DeviceLogin", "fasle:" + e.getMessage());
+			e.printStackTrace();
+			return null;
+		}
+		return result;
 	}
 }

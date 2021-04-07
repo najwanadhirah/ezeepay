@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".activity.ui.OTPUI"
+    android:layout_height="match_parent">
+
+    <com.poovam.pinedittextfield.SquarePinField
+        android:layout_marginTop="40dp"
+        android:id="@+id/squareField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSelectHandle="@drawable/text_handle"
+        android:textSize="16sp"
+        app:cornerRadius="1dp"
+        app:noOfFields="4" />
+
+    <TextView
+        android:layout_below="@+id/squareField"
+        android:id="@+id/tvInfo"
+        style="@style/RTEditTextStyle"
+        android:gravity="center"
+        android:text="Please enter your 4 digit OTP code here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_below="@+id/tvInfo"
+        android:id="@+id/tvInfo2"
+        android:layout_marginTop="60dp"
+        style="@style/RTEditTextStyle"
+        android:gravity="center"
+        android:text="Not receiving an OTP? Please contact admin."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/pBar"-->
+        <!--style="@android:style/Widget.ProgressBar.Inverse"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:progress="80" />-->
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_gradient_bg_button"
+        android:text="Submit"
+        android:textColor="@color/solid_white" />
+
+</RelativeLayout>

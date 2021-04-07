@@ -1,3 +1,11 @@
+com/rt/qpay99/activity/ui/OTPUI.java
+ com.rt.qpay99.activity.ui.OTPUI
+ com.rt.qpay99.activity.ui.OTPUI$1
+ com.rt.qpay99.activity.ui.OTPUI$2
+ com.rt.qpay99.activity.ui.OTPUI$3
+ com.rt.qpay99.activity.ui.OTPUI$4
+ com.rt.qpay99.activity.ui.OTPUI$AlertDialogOnclickListender
+ com.rt.qpay99.activity.ui.OTPUI$postDataAsync
 com/rt/qpay99/activity/ui/CheckCustomerTxStatusUI.java
  com.rt.qpay99.activity.ui.CheckCustomerTxStatusUI
  com.rt.qpay99.activity.ui.CheckCustomerTxStatusUI$1
@@ -49,6 +57,12 @@ com/rt/qpay99/fragment/SettingFragment_v2UI.java
  com.rt.qpay99.fragment.SettingFragment_v2UI$retrieveProductInfoAsync
 com/rt/qpay99/ws/RTSoapAttribute.java
  com.rt.qpay99.ws.RTSoapAttribute
+com/rt/qpay99/activity/ui/LuckyDrawPageUI.java
+ com.rt.qpay99.activity.ui.LuckyDrawPageUI
+ com.rt.qpay99.activity.ui.LuckyDrawPageUI$1
+ com.rt.qpay99.activity.ui.LuckyDrawPageUI$getAgentQPoints
+ com.rt.qpay99.activity.ui.LuckyDrawPageUI$getRedeemList
+ com.rt.qpay99.activity.ui.LuckyDrawPageUI$mRecyclerViewOnItemClick
 com/rt/qpay99/activity/ui/ReportUI.java
  com.rt.qpay99.activity.ui.ReportUI
  com.rt.qpay99.activity.ui.ReportUI$1
@@ -90,6 +104,8 @@ com/rt/qpay99/util/SharedPreferenceUtil.java
  com.rt.qpay99.util.SharedPreferenceUtil$9
 com/rt/qpay99/activity/ui/BuyPrinterUI.java
  com.rt.qpay99.activity.ui.BuyPrinterUI
+com/rt/qpay99/util/HttpUtil.java
+ com.rt.qpay99.util.HttpUtil
 com/rt/qpay99/object/ProductPrice.java
  com.rt.qpay99.object.ProductPrice
 com/rt/qpay99/fragment/SIMFragmentUI.java
@@ -98,6 +114,11 @@ com/rt/qpay99/adapter/InternationalProductAdapter.java
  com.rt.qpay99.adapter.InternationalProductAdapter
  com.rt.qpay99.adapter.InternationalProductAdapter$1
  com.rt.qpay99.adapter.InternationalProductAdapter$MenuViewHolder
+com/rt/qpay99/util/GpsUtils.java
+ com.rt.qpay99.util.GpsUtils
+ com.rt.qpay99.util.GpsUtils$1
+ com.rt.qpay99.util.GpsUtils$2
+ com.rt.qpay99.util.GpsUtils$onGpsListener
 com/rt/qpay99/ws/RTWS.java
  com.rt.qpay99.ws.RTWS
 com/rt/qpay99/object/CustomerTxStatusInfos.java
@@ -444,33 +465,15 @@ com/rt/qpay99/adapter/CustomerTopupTxAdapter.java
 com/rt/qpay99/activity/ui/FeedbackFormUI.java
  com.rt.qpay99.activity.ui.FeedbackFormUI
  com.rt.qpay99.activity.ui.FeedbackFormUI$1
-com/rt/qpay99/activity/ui/LoginUI.java
- com.rt.qpay99.activity.ui.LoginUI
- com.rt.qpay99.activity.ui.LoginUI$1
- com.rt.qpay99.activity.ui.LoginUI$10
- com.rt.qpay99.activity.ui.LoginUI$11
- com.rt.qpay99.activity.ui.LoginUI$12
- com.rt.qpay99.activity.ui.LoginUI$13
- com.rt.qpay99.activity.ui.LoginUI$14
- com.rt.qpay99.activity.ui.LoginUI$15
- com.rt.qpay99.activity.ui.LoginUI$16
- com.rt.qpay99.activity.ui.LoginUI$17
- com.rt.qpay99.activity.ui.LoginUI$17$1
- com.rt.qpay99.activity.ui.LoginUI$17$1$1
- com.rt.qpay99.activity.ui.LoginUI$18
- com.rt.qpay99.activity.ui.LoginUI$2
- com.rt.qpay99.activity.ui.LoginUI$3
- com.rt.qpay99.activity.ui.LoginUI$4
- com.rt.qpay99.activity.ui.LoginUI$5
- com.rt.qpay99.activity.ui.LoginUI$6
- com.rt.qpay99.activity.ui.LoginUI$7
- com.rt.qpay99.activity.ui.LoginUI$8
- com.rt.qpay99.activity.ui.LoginUI$9
- com.rt.qpay99.activity.ui.LoginUI$UpdatePushNotificationIDAsync
- com.rt.qpay99.activity.ui.LoginUI$idTouchCheck
- com.rt.qpay99.activity.ui.LoginUI$postDataAsync
- com.rt.qpay99.activity.ui.LoginUI$retrieveProductInfoAsync
- com.rt.qpay99.activity.ui.LoginUI$versionCheck
+com/rt/qpay99/activity/ui/RegisterUI.java
+ com.rt.qpay99.activity.ui.RegisterUI
+ com.rt.qpay99.activity.ui.RegisterUI$1
+ com.rt.qpay99.activity.ui.RegisterUI$2
+ com.rt.qpay99.activity.ui.RegisterUI$3
+ com.rt.qpay99.activity.ui.RegisterUI$4
+ com.rt.qpay99.activity.ui.RegisterUI$5
+ com.rt.qpay99.activity.ui.RegisterUI$6
+ com.rt.qpay99.activity.ui.RegisterUI$7
 com/rt/qpay99/adapter/CheckCustomerTxStatusAdapter.java
  com.rt.qpay99.adapter.CheckCustomerTxStatusAdapter
  com.rt.qpay99.adapter.CheckCustomerTxStatusAdapter$1
@@ -553,6 +556,10 @@ com/rt/qpay99/fragment/DataFragment.java
  com.rt.qpay99.fragment.DataFragment$mRecyclerViewOnItemClick
 com/rt/qpay99/object/FontType.java
  com.rt.qpay99.object.FontType
+com/rt/qpay99/ShareFunc/SendLocationAsync.java
+ com.rt.qpay99.ShareFunc.SendLocationAsync
+ com.rt.qpay99.ShareFunc.SendLocationAsync$1
+ com.rt.qpay99.ShareFunc.SendLocationAsync$SendLocationAsyncListener
 com/rt/qpay99/adapter/SettingRecycleAdapter.java
  com.rt.qpay99.adapter.SettingRecycleAdapter
  com.rt.qpay99.adapter.SettingRecycleAdapter$MyViewHolder
@@ -630,6 +637,8 @@ com/rt/qpay99/listener/SmsListener.java
  com.rt.qpay99.listener.SmsListener
 com/rt/qpay99/object/ProductInfos.java
  com.rt.qpay99.object.ProductInfos
+com/rt/qpay99/ShareFunc/ShareWidget.java
+ com.rt.qpay99.ShareFunc.ShareWidget
 com/rt/qpay99/Main4Activity.java
  com.rt.qpay99.Main4Activity
  com.rt.qpay99.Main4Activity$1
@@ -739,6 +748,11 @@ com/rt/qpay99/adapter/BuyProductCategoryRecycleAdapter.java
  com.rt.qpay99.adapter.BuyProductCategoryRecycleAdapter$MyViewHolder
 com/rt/qpay99/ws/XmlParserException.java
  com.rt.qpay99.ws.XmlParserException
+com/rt/qpay99/util/LocationUtil.java
+ com.rt.qpay99.util.LocationUtil
+ com.rt.qpay99.util.LocationUtil$1
+ com.rt.qpay99.util.LocationUtil$2
+ com.rt.qpay99.util.LocationUtil$LastKnowLocationInterface
 com/rt/qpay99/fragment/TopupFragment_v2UI.java
  com.rt.qpay99.fragment.TopupFragment_v2UI
  com.rt.qpay99.fragment.TopupFragment_v2UI$mRecyclerViewOnItemClick
@@ -836,6 +850,9 @@ com/rt/qpay99/activity/ui/FBShareUI.java
  com.rt.qpay99.activity.ui.FBShareUI$FBShareAsymc
 com/rt/qpay99/component/MovableFloatingActionButton.java
  com.rt.qpay99.component.MovableFloatingActionButton
+com/rt/qpay99/ShareFunc/ChangePassTaskAsync.java
+ com.rt.qpay99.ShareFunc.ChangePassTaskAsync
+ com.rt.qpay99.ShareFunc.ChangePassTaskAsync$ChangePassResultListener
 com/rt/qpay99/Interface/ListenerInterface.java
  com.rt.qpay99.Interface.ListenerInterface
  com.rt.qpay99.Interface.ListenerInterface$RecyclerViewClickListener
@@ -990,18 +1007,43 @@ com/rt/qpay99/activity/ui/PinDetailUI.java
  com.rt.qpay99.activity.ui.PinDetailUI$8
  com.rt.qpay99.activity.ui.PinDetailUI$9
  com.rt.qpay99.activity.ui.PinDetailUI$valueOnClickListener
-com/rt/qpay99/activity/ui/RegisterUI.java
- com.rt.qpay99.activity.ui.RegisterUI
- com.rt.qpay99.activity.ui.RegisterUI$1
- com.rt.qpay99.activity.ui.RegisterUI$2
- com.rt.qpay99.activity.ui.RegisterUI$3
- com.rt.qpay99.activity.ui.RegisterUI$4
- com.rt.qpay99.activity.ui.RegisterUI$5
- com.rt.qpay99.activity.ui.RegisterUI$6
- com.rt.qpay99.activity.ui.RegisterUI$7
-com/rt/qpay99/activity/ui/LuckyDrawPageUI.java
- com.rt.qpay99.activity.ui.LuckyDrawPageUI
- com.rt.qpay99.activity.ui.LuckyDrawPageUI$1
- com.rt.qpay99.activity.ui.LuckyDrawPageUI$getAgentQPoints
- com.rt.qpay99.activity.ui.LuckyDrawPageUI$getRedeemList
- com.rt.qpay99.activity.ui.LuckyDrawPageUI$mRecyclerViewOnItemClick
+com/rt/qpay99/activity/ui/ForgotPasswordUI.java
+ com.rt.qpay99.activity.ui.ForgotPasswordUI
+ com.rt.qpay99.activity.ui.ForgotPasswordUI$1
+ com.rt.qpay99.activity.ui.ForgotPasswordUI$1$1
+ com.rt.qpay99.activity.ui.ForgotPasswordUI$1$2
+ com.rt.qpay99.activity.ui.ForgotPasswordUI$1$3
+ com.rt.qpay99.activity.ui.ForgotPasswordUI$2
+ com.rt.qpay99.activity.ui.ForgotPasswordUI$LastKnowLocationResult
+ com.rt.qpay99.activity.ui.ForgotPasswordUI$SendLocationListener
+ com.rt.qpay99.activity.ui.ForgotPasswordUI$dialogClick
+ com.rt.qpay99.activity.ui.ForgotPasswordUI$handleCaptchaResultAsync
+ com.rt.qpay99.activity.ui.ForgotPasswordUI$postDataAsync
+com/rt/qpay99/activity/ui/LoginUI.java
+ com.rt.qpay99.activity.ui.LoginUI
+ com.rt.qpay99.activity.ui.LoginUI$1
+ com.rt.qpay99.activity.ui.LoginUI$10
+ com.rt.qpay99.activity.ui.LoginUI$11
+ com.rt.qpay99.activity.ui.LoginUI$12
+ com.rt.qpay99.activity.ui.LoginUI$13
+ com.rt.qpay99.activity.ui.LoginUI$14
+ com.rt.qpay99.activity.ui.LoginUI$15
+ com.rt.qpay99.activity.ui.LoginUI$16
+ com.rt.qpay99.activity.ui.LoginUI$17
+ com.rt.qpay99.activity.ui.LoginUI$18
+ com.rt.qpay99.activity.ui.LoginUI$18$1
+ com.rt.qpay99.activity.ui.LoginUI$18$1$1
+ com.rt.qpay99.activity.ui.LoginUI$19
+ com.rt.qpay99.activity.ui.LoginUI$2
+ com.rt.qpay99.activity.ui.LoginUI$3
+ com.rt.qpay99.activity.ui.LoginUI$4
+ com.rt.qpay99.activity.ui.LoginUI$5
+ com.rt.qpay99.activity.ui.LoginUI$6
+ com.rt.qpay99.activity.ui.LoginUI$7
+ com.rt.qpay99.activity.ui.LoginUI$8
+ com.rt.qpay99.activity.ui.LoginUI$9
+ com.rt.qpay99.activity.ui.LoginUI$UpdatePushNotificationIDAsync
+ com.rt.qpay99.activity.ui.LoginUI$idTouchCheck
+ com.rt.qpay99.activity.ui.LoginUI$postDataAsync
+ com.rt.qpay99.activity.ui.LoginUI$retrieveProductInfoAsync
+ com.rt.qpay99.activity.ui.LoginUI$versionCheck
